@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:NihaiUstveri-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:NihaiUstveri-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:tipler="urn:dpt:eyazisma:schema:xsd:Tipler-2"
+  version="1.0">
+
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:Tipler-2" schemaLocation="EY-Tipler-2.xsd"/>
+
+  <xsd:element name="NihaiUstVeri" type="CT_NihaiUstveri"></xsd:element>
+
+  <xsd:complexType name="CT_NihaiUstveri">
+    <xsd:sequence>
+      <xsd:element ref="tipler:Tarih" />
+      <xsd:element ref="tipler:BelgeNo" />
+      <xsd:element ref="tipler:BelgeImzalar"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Cbddo.eYazisma</id>
+    <version>1.0.0</version>
+    <authors>Cbddo.eYazisma</authors>
+    <description>Package Description</description>
+    <copyright>Copyright ©  2025</copyright>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.CSharp" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.DataSetExtensions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.IO.Packaging" version="9.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\SPK\DotNet\Source\Cbddo.eYazisma\bin\Release\net8.0\Cbddo.eYazisma.dll" target="lib\net8.0\Cbddo.eYazisma.dll" />
+  </files>
+</package>

@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SPK\\DotNet\\Source\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9D4185-6DFF-44A0-BC18-183141451F38}|Cbddo.eYazisma.Test.App\\Cbddo.eYazisma.Test.App.csproj|c:\\spk\\dotnet\\source\\cbddo.eyazisma.test.app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9D4185-6DFF-44A0-BC18-183141451F38}|Cbddo.eYazisma.Test.App\\Cbddo.eYazisma.Test.App.csproj|solutionrelative:cbddo.eyazisma.test.app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9D4185-6DFF-44A0-BC18-183141451F38}|Cbddo.eYazisma.Test.App\\Cbddo.eYazisma.Test.App.csproj|c:\\spk\\dotnet\\source\\cbddo.eyazisma.test.app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5F9D4185-6DFF-44A0-BC18-183141451F38}|Cbddo.eYazisma.Test.App\\Cbddo.eYazisma.Test.App.csproj|solutionrelative:cbddo.eyazisma.test.app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\SPK\\DotNet\\Source\\Cbddo.eYazisma.Test.App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Cbddo.eYazisma.Test.App\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\SPK\\DotNet\\Source\\Cbddo.eYazisma.Test.App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Cbddo.eYazisma.Test.App\\MainWindow.xaml.cs",
+              "ViewState": "AgIAACECAAAAAAAAAAAQwDACAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T05:51:34.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\SPK\\DotNet\\Source\\Cbddo.eYazisma.Test.App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Cbddo.eYazisma.Test.App\\MainWindow.xaml",
+              "ToolTip": "C:\\SPK\\DotNet\\Source\\Cbddo.eYazisma.Test.App\\MainWindow.xaml",
+              "RelativeToolTip": "Cbddo.eYazisma.Test.App\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-12T07:38:16.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

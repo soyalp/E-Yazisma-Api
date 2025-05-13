@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:KodGuvenlik-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:KodGuvenlik-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+  version="1.0">
+  <xsd:simpleType name="ST_KodGuvenlikKodu">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="YOK">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Yok</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HZO">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Hizmete Özel</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OZL">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Özel</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GZL">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Gizli</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CGZ">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Çok Gizli</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

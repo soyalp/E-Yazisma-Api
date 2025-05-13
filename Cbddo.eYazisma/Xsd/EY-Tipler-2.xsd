@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:Tipler-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+  xmlns:kodivedilik="urn:dpt:eyazisma:schema:xsd:KodIvedilik-2"
+  xmlns:kodguvenlik="urn:dpt:eyazisma:schema:xsd:KodGuvenlik-2"
+  xmlns:koddagitimturu="urn:dpt:eyazisma:schema:xsd:KodDagitimTuru-2"
+  xmlns:kodekturu="urn:dpt:eyazisma:schema:xsd:KodEkTuru-2"
+  xmlns:guncellemeturu="urn:dpt:eyazisma:schema:xsd:GuncellemeTuru-2"
+  xmlns:clmIANAMIMEMediaType="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003"
+  xmlns:clm5639="urn:un:unece:uncefact:codelist:specification:5639:1988"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+  version="1.0">
+
+  <xsd:import namespace="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" schemaLocation="reference/UnqualifiedDataTypeSchemaModule-2.0.xsd"/>
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:KodIvedilik-2" schemaLocation="EY-KodIvedilik-2.xsd"/>
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:KodGuvenlik-2" schemaLocation="EY-KodGuvenlik-2.xsd"/>
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:KodDagitimTuru-2" schemaLocation="EY-KodDagitimTuru-2.xsd"/>
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:KodEkTuru-2" schemaLocation="EY-KodEkTuru-2.xsd"/>
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:GuncellemeTuru-2" schemaLocation="EY-GuncellemeTuru-2.xsd"/>
+  <xsd:import namespace="urn:un:unece:uncefact:codelist:specification:IANAMIMEMediaType:2003" schemaLocation="reference/CodeList_MIMEMediaTypeCode_IANA_7_04.xsd"/>
+  <xsd:import namespace="urn:un:unece:uncefact:codelist:specification:5639:1988" schemaLocation="reference/CodeList_LanguageCode_ISO_7_04.xsd"/>
+
+
+  <xsd:element name="BelgeId" type="ST_GUID" />
+  <xsd:element name="Konu" type="udt:TextType" />
+  <xsd:element name="Tarih" type="xsd:dateTime" />
+  <xsd:element name="GuvenlikKodu" type="kodguvenlik:ST_KodGuvenlikKodu" />
+  <xsd:element name="GuvenlikKoduGecerlilikTarihi" type="xsd:dateTime" nillable="true" />
+  <xsd:element name="BelgeNo" type="xsd:string" />
+  <xsd:element name="OzId" type="udt:IdentifierType" />
+  <xsd:element name="MimeTuru" type="xsd:normalizedString" nillable="true" />
+  <xsd:element name="Dil" type="xsd:string" />
+  <xsd:element name="DagitimListesi" type="CT_DagitimListesi" />
+  <xsd:element name="HedefListesi" type="CT_HedefListesi" />
+  <xsd:element name="Ekler" type="CT_Ekler" />
+  <xsd:element name="Ilgiler" type="CT_Ilgiler" />
+  <xsd:element name="Olusturan" type="CT_Olusturan" />
+  <xsd:element name="DosyaNo" type="xsd:string" />
+  <xsd:element name="DosyaAdi" type="xsd:string" />
+  <xsd:element name="ImhaTarihi" type="xsd:dateTime" />
+  <xsd:element name="ImzaListesi" type="CT_ImzaListesi" />
+  <xsd:element name="HeyskListesi" type="CT_HEYSKListesi" />
+  <xsd:element name="IlgiliListesi" type="CT_IlgiliListesi" />
+  <xsd:element name="KonulmamisEkListesi" type="CT_KonulmamisEkListesi" />
+  <xsd:element name="SdpBilgisi" type="CT_SDPBilgisi" />
+  <xsd:element name="BelgeImzalar" type="CT_BelgeImza"/>
+  <xsd:element name="SifreliIcerikBilgisi" type="CT_SifreliIcerikBilgisi" />
+  <xsd:element name="DogrulamaBilgisi" type="CT_DogrulamaBilgisi"/>
+  <xsd:element name="GuncellemeTuru" type="guncellemeturu:ST_GuncellemeTuru" />
+  <xsd:element name="GuncellemeBilgisi" type="CT_GuncellemeBilgisi"/>
+  <xsd:element name="Guncelleme" type="CT_Guncelleme"/>
+  <xsd:element name="GuvenlikKoduDegisiklikBilgisi" type="CT_GuvenlikKoduDegisiklikBilgisi"/>
+
+  <xsd:complexType name="CT_GuncellemeBilgisi">
+    <xsd:sequence>
+      <xsd:element name="Guncellemeler" type="CT_Guncelleme" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Guncelleme">
+    <xsd:sequence>
+      <xsd:element name="GuncellemeTuru" type="guncellemeturu:ST_GuncellemeTuru" />
+      <xsd:choice minOccurs="1" maxOccurs="1">
+        <xsd:element name="GuvenlikKoduDegisiklikBilgisi" type="CT_GuvenlikKoduDegisiklikBilgisi" />
+        <!--XSD'de Choice olarak eğer bir tane element verilir ise bu verilen element otomatik olarak oluşturulan sınıftaki Item nesnesinin tipi oluyor.
+          İleriye dönük buraya farklı eklemeler yapılabileceği için aşağıda kullanılan <xsd:any/> özelliği vasıtası ile xsd:choice kullanıldığında
+          item nesnesinin tipinin object olması sağlandı.
+        -->
+        <xsd:any />
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_GuvenlikKoduDegisiklikBilgisi">
+    <xsd:sequence>
+      <xsd:element name="YeniGizlilikDerecesi" type="kodguvenlik:ST_KodGuvenlikKodu" minOccurs="1" maxOccurs="1"></xsd:element>
+      <xsd:element name="DegistirmeTarihi" type="xsd:dateTime" minOccurs="1" maxOccurs="1"></xsd:element>
+      <xsd:element name="Aciklama" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+      <xsd:element name="KomisyonKarariBelgeNo" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+      <xsd:element name="KomisyonKarariBelgeId" type="xsd:string" minOccurs="1" maxOccurs="1"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_SifreliIcerikBilgisi">
+    <xsd:sequence>
+      <xsd:element name="URI" type="xsd:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="Id" type="xsd:ID" use="optional"/>
+    <xsd:attribute name="Version" type="xsd:string" use="optional"/>
+    <xsd:attribute name="Yontem" type="xsd:string" use="optional"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_SDPBilgisi">
+    <xsd:sequence>
+      <xsd:element name="AnaSdp" type="CT_SDP" minOccurs="1" maxOccurs="1" />
+      <xsd:element name="DigerSdpler" type="CT_SDPListesi" minOccurs="0" maxOccurs="1" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_SDPListesi">
+    <xsd:sequence>
+      <xsd:element name="SdpListesi" type="CT_SDP" minOccurs="0" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_SDP">
+    <xsd:sequence>
+      <xsd:element name="Kod" type="xsd:string" minOccurs="1"/>
+      <xsd:element name="Ad" type="xsd:string" minOccurs="1" />
+      <xsd:element name="Aciklama" type="xsd:string" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_HEYSK">
+    <xsd:sequence>
+      <xsd:element name="Kod" type="xsd:int" minOccurs="1"/>
+      <xsd:element name="Ad" type="xsd:string" minOccurs="1" />
+      <xsd:element name="Tanim" type="xsd:string" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_HEYSKListesi">
+    <xsd:sequence>
+      <xsd:element name="Heysk" type="CT_HEYSK" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_BelgeImza">
+    <xsd:sequence>
+      <xsd:element name="Imza" type="CT_Imza" minOccurs="1" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:simpleType name="ST_TCKN">
+    <xsd:annotation>
+      <xsd:documentation>
+        <ccts:Component>
+          <ccts:DictionaryEntryName>TC Kimlik No</ccts:DictionaryEntryName>
+        </ccts:Component>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:normalizedString">
+      <xsd:pattern value="^[1-9]{1}[0-9]{10}$"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="ST_KKK">
+    <xsd:annotation>
+      <xsd:documentation>
+        <ccts:Component>
+          <ccts:DictionaryEntryName>Kurum Kimlik Kodu</ccts:DictionaryEntryName>
+          <ccts:Definition>Kurumun Devlet Teşkilatı Veri Tabanındaki kodudur</ccts:Definition>
+        </ccts:Component>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:normalizedString">
+      <xsd:pattern value="^[A-Fa-f0-9]{14}$"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="ST_GUID">
+    <xsd:restriction base="xsd:normalizedString">
+      <xsd:pattern value="^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="CT_Id">
+    <xsd:attribute name="Value" type="ST_GUID"></xsd:attribute>
+    <xsd:attribute name="EYazismaIdMi" type="xsd:boolean"></xsd:attribute>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_DagitimListesi">
+    <xsd:sequence>
+      <xsd:element name="Dagitim" type="CT_Dagitim" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_HedefListesi">
+    <xsd:sequence>
+      <xsd:element name="Hedef" type="CT_Hedef" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Hedef">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:element name="KurumKurulus" type="CT_KurumKurulus" />
+        <xsd:element name="GercekSahis" type="CT_GercekSahis" />
+        <xsd:element name="TuzelSahis" type="CT_TuzelSahis" />
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_OzetAlgoritmasi" mixed="true">
+    <xsd:sequence>
+      <xsd:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="Algorithm" type="xsd:anyURI" use="required"/>
+  </xsd:complexType>
+
+  <xsd:simpleType name="ST_OzetDegeri">
+    <xsd:restriction base="xsd:base64Binary"/>
+  </xsd:simpleType>
+
+  <xsd:complexType name="CT_Ozet">
+    <xsd:sequence>
+      <xsd:element name="OzetAlgoritmasi" type="CT_OzetAlgoritmasi" />
+      <xsd:element name="OzetDegeri" type="ST_OzetDegeri" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Imza">
+    <xsd:sequence>
+      <xsd:element name="Imzalayan" type="CT_GercekSahis" />
+      <xsd:element name="YetkiDevreden" type="CT_GercekSahis" minOccurs="0" />
+      <xsd:element name="VekaletVeren" type="CT_GercekSahis" minOccurs="0" />
+      <xsd:element name="Makam" type="udt:NameType" minOccurs="0"/>
+      <xsd:element name="Amac" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="Aciklama" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="Tarih" type="xsd:dateTime" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_ImzaListesi">
+    <xsd:sequence>
+      <xsd:element name="Imza" type="CT_Imza" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Olusturan">
+    <xsd:choice>
+      <xsd:element name="KurumKurulus" type="CT_KurumKurulus" />
+      <xsd:element name="GercekSahis" type="CT_GercekSahis" />
+      <xsd:element name="TuzelSahis" type="CT_TuzelSahis" />
+    </xsd:choice>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Dagitim">
+    <xsd:sequence>
+      <xsd:choice>
+        <xsd:element name="KurumKurulus" type="CT_KurumKurulus" />
+        <xsd:element name="GercekSahis" type="CT_GercekSahis" />
+        <xsd:element name="TuzelSahis" type="CT_TuzelSahis" />
+      </xsd:choice>
+      <xsd:element name="Ivedilik" type="kodivedilik:ST_KodIvedilik" />
+      <xsd:element name="DagitimTuru" type="koddagitimturu:ST_KodDagitimTuru" />
+      <xsd:element name="Miat" type="xsd:duration" minOccurs="0" />
+      <xsd:element ref="KonulmamisEkListesi" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_KonulmamisEkListesi">
+    <xsd:sequence>
+      <xsd:element name="KonulmamisEk" type="CT_KonulmamisEk" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Ekler">
+    <xsd:sequence>
+      <xsd:element name="Ek" type="CT_Ek" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Ek">
+    <xsd:sequence>
+      <xsd:element name="Id" type="CT_Id"></xsd:element>
+      <xsd:element name="BelgeNo" type="xsd:string" minOccurs="0" />
+      <xsd:element name="Tur" type="kodekturu:ST_KodEkTuru" />
+      <xsd:element name="DosyaAdi" type="xsd:string" minOccurs="0" />
+      <xsd:element name="MimeTuru" type="xsd:normalizedString" minOccurs="0" />
+      <xsd:element name="Ad" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="SiraNo" type="xsd:int" minOccurs="1" />
+      <xsd:element name="Aciklama" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="Referans" type="xsd:anyURI" minOccurs="0"></xsd:element>
+      <xsd:element name="OzId" type="udt:IdentifierType" minOccurs="0"></xsd:element>
+      <xsd:element name="ImzaliMi" type="xsd:boolean" minOccurs="0"></xsd:element>
+      <xsd:element name="Ozet" type="CT_Ozet" minOccurs="0"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Ilgiler">
+    <xsd:sequence>
+      <xsd:element name="Ilgi" type="CT_Ilgi" minOccurs="1" maxOccurs="unbounded" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Ilgi">
+    <xsd:sequence>
+      <xsd:element name="Id" type="CT_Id"></xsd:element>
+      <xsd:element name="BelgeNo" type="xsd:string" minOccurs="0" />
+      <xsd:element name="Tarih" type="xsd:dateTime" minOccurs="0" />
+      <xsd:element name="Etiket" type="xsd:string" />
+      <xsd:element name="EkId" type="ST_GUID" minOccurs="0" />
+      <xsd:element name="Ad" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="Aciklama" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="OzId" type="udt:IdentifierType" minOccurs="0"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_KonulmamisEk">
+    <xsd:sequence>
+      <xsd:element name="EkId" type="ST_GUID" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_KurumKurulus">
+    <xsd:sequence>
+      <xsd:element name="KKK" type="ST_KKK" />
+      <xsd:element name="Adi" type="udt:NameType" minOccurs="0" />
+      <xsd:element name="IletisimBilgisi" type="CT_IletisimBilgisi" minOccurs="0" />
+      <xsd:element name="BirimKKK" type="ST_KKK" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_TuzelSahis">
+    <xsd:sequence>
+      <xsd:element name="Id" type="udt:IdentifierType" />
+      <xsd:element name="Adi" type="udt:NameType" minOccurs="0" />
+      <xsd:element name="IletisimBilgisi" type="CT_IletisimBilgisi" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_GercekSahis">
+    <xsd:sequence>
+      <xsd:element name="Kisi" type="CT_Kisi" />
+      <xsd:element name="TCKN" type="ST_TCKN" minOccurs="0" />
+      <xsd:element name="Gorev" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="IletisimBilgisi" type="CT_IletisimBilgisi" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+
+  <xsd:complexType name="CT_IletisimBilgisi">
+    <xsd:sequence>
+      <xsd:element name="Telefon" type="xsd:string" minOccurs="0" />
+      <xsd:element name="TelefonDiger" type="xsd:string" minOccurs="0" />
+      <xsd:element name="EPosta" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="KepAdresi" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Faks" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="WebAdresi" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="Adres" type="udt:TextType" minOccurs="0" />
+      <xsd:element name="Il" type="udt:NameType" minOccurs="0"/>
+      <xsd:element name="Ilce" type="udt:NameType" minOccurs="0"/>
+      <xsd:element name="Ulke" type="udt:NameType" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Ilgili">
+    <xsd:choice>
+      <xsd:element name="KurumKurulus" type="CT_KurumKurulus" />
+      <xsd:element name="GercekSahis" type="CT_GercekSahis" />
+      <xsd:element name="TuzelSahis" type="CT_TuzelSahis" />
+    </xsd:choice>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_IlgiliListesi">
+    <xsd:sequence>
+      <xsd:element name="Ilgili" type="CT_Ilgili" minOccurs="1" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Kisi">
+    <xsd:sequence>
+      <xsd:element name="IlkAdi" type="udt:NameType" />
+      <xsd:element name="Soyadi" type="udt:NameType" />
+      <xsd:element name="IkinciAdi" type="udt:NameType" minOccurs="0" />
+      <xsd:element name="Unvan" type="udt:NameType" minOccurs="0" />
+      <xsd:element name="OnEk" type="udt:TextType" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_DogrulamaBilgisi">
+    <xsd:sequence>
+      <xsd:element name="DogrulamaAdresi" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

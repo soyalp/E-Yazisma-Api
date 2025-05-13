@@ -1,0 +1,3590 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cbddo.eYazisma</name>
+    </assembly>
+    <members>
+        <member name="T:Cbddo.eYazisma.Tipler.Araclar">
+            <summary>
+            Sabit tanımlar ve yardımcı metodları içerir.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_USTVERI">
+            <summary>
+            Ustveri bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_NIHAIUSTVERI">
+            <summary>
+            Ustveri bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_BELGEHEDEF">
+            <summary>
+            BelgeHedef bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_PAKETOZETI">
+            <summary>
+            PaketOzeti bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_PARAFOZETI">
+            <summary>
+            ParafOzeti bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_NIHAIOZET">
+            <summary>
+            NihaiOzet bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_USTYAZI">
+            <summary>
+            UstYazi bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_IMZA">
+            <summary>
+            Imzali PaketOzeti bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_PARAFIMZA">
+            <summary>
+            Imzali ParafOzeti bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_MUHUR">
+            <summary>
+            Mühürlü NihaiOzet bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_GUNCELLEME_BILGISI">
+            <summary>
+            Güncelleme bilgisi bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_EK">
+            <summary>
+            Ek bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_IMZASIZEK">
+            <summary>
+            İmzasız ek bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_CORE">
+            <summary>
+            Core bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_ARSIVOZELLIKLERI">
+            <summary>
+            ArşivOzellikleri bileşeni ilişki türü. Bu bileşenin tanımı ileride yapılacaktır.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_SIFRELIICERIK">
+            <summary>
+            SifreliIcerik bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_ORIJINAL_PAKET">
+            <summary>
+            OrijinalPaket bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RELATION_TYPE_SIFRELIICERIKBILGISI">
+            <summary>
+            SifreliIcerikBilgisi bileşeni ilişki türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ALGORITHM_SHA256">
+            <summary>
+            W3C XML Signature Syntax and Processing, SHA256 namespace
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ALGORITHM_SHA512">
+            <summary>
+            W3C XML Signature Syntax and Processing, SHA512 namespace
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ALGORITHM_SHA384">
+            <summary>
+            W3C XML Signature Syntax and Processing, SHA384 namespace
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.HARICI_PAKET_BILESENI_REFERANS_TIPI">
+            <summary>
+            Paket Özeti ve Nihai Özete eklenen paket dışı bileşenlere ilişkin tip değeri
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.DAHILI_PAKET_BILESENI_REFERANS_TIPI">
+            <summary>
+            Paket Özeti ve Nihai Özete eklenen paket içi bileşenlere ilişkin tip değeri
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.SIFRELEME_YONTEMI">
+            <summary>
+            Şifreleme Yöntemi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.SIFRELEME_YONTEMI_URI_1">
+            <summary>
+            Şifreleme Yöntemi Rehberi URI
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.SIFRELEME_YONTEMI_URI_2">
+            <summary>
+            Şifreleme Yöntemi Rehberi URI
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.SIFRELEME_YONTEMI_VERSIYONU">
+            <summary>
+            Şifreleme Yöntemi Versiyonu
+            </summary> 
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RESMIYAZISMA">
+            <summary>
+            e-Yazışma paketi kategorisi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RESMIYAZISMASIFRELI">
+            <summary>
+            Şifreli e-Yazışma paketi kategorisi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.RESMIYAZISMAGUNCELLEME">
+            <summary>
+            Güncelleme e-Yazışma paketi kategorisi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.EYAZISMAMIMETURU">
+            <summary>
+            e-Yazışma paketi MIME türü
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.PAKET_VERSIYON">
+            <summary>
+            Paket Versiyonu
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.PAKET_REVIZYON">
+            <summary>
+            Paket revizyonu
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_PAKETOZETI">
+            <summary>
+            PaketOzeti bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_PARAFOZETI">
+            <summary> 
+            ParafOzeti bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_NIHAIOZET">
+            <summary>
+            NihaiOzet bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_USTVERI">
+            <summary> 
+            Ustveri bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_NIHAIUSTVERI">
+            <summary> 
+            NihaiUstveri bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_BELGEHEDEF">
+            <summary> 
+            BelgeHedef bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_FORMAT_USTYAZI">
+            <summary> 
+            UstYazi bileşenine ait URI formatı.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_ROOT_EK">
+            <summary> 
+            Ek bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_ROOT_IMZASIZEK">
+            <summary> 
+            İmzasızEk bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_IMZA">
+            <summary> 
+            Imzali PaketOzeti bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_PARAFIMZA">
+            <summary> 
+            Imzali ParafOzeti bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_MUHUR">
+            <summary> 
+            Mühürlü NihaiOzet bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_ARSIVOZELLIKLERI">
+            <summary> 
+            ArşivOzellikleri bileşenine ait URI. Bu bileşenin tanımı ileride yapılacaktır.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_FORMAT_SIFRELIICERIK">
+            <summary>
+            SifreliIcerik bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_SIFRELIICERIKBILGISI">
+            <summary> 
+            SifreliIcerikBilgisi bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_GUNCELLEME_BILGISI">
+            <summary> 
+            GuncellemeBilgisi bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.URI_FORMAT_ORIJINAL_PAKET">
+            <summary> 
+            OrijinalPaket bileşenine ait URI.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_ROOT_EK">
+            <summary>
+            Ek bileşeni ilişkisi Id formatı.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_ROOT_IMZASIZEK">
+            <summary> 
+            İmzasız Ek bileşeni ilişkisi Id formatı.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_IMZA">
+            <summary> 
+            İmzalı PaketOzeti bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_PARAFIMZA">
+            <summary> 
+            İmzalı ParafOzetu bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_MUHUR">
+            <summary> 
+            İmzalı NihaiOzet bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_USTYAZI">
+            <summary>
+            UstYazi bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_USTVERI">
+            <summary> 
+            Ustveri bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_NIHAIUSTVERI">
+            <summary> 
+            NihaiUstveri bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_BELGEHEDEF">
+            <summary>
+            BelgeHedef bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_PAKETOZETI">
+            <summary> 
+            PaketOzeti bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_PARAFOZETI">
+            <summary> 
+            ParafOzeti bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_NIHAIOZET">
+            <summary> 
+            NihaiOzet bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_SIFRELIICERIK">
+            <summary> 
+            SifreliIcerik bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_SIFRELIICERIKBILGISI">
+            <summary> 
+            Ek bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_GUNCELLEME_BILGISI">
+            <summary> 
+            Güncelleme bilgisi bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.ID_ORIJINAL_PAKET">
+            <summary> 
+            Orijinal paket bileşeni ilişkisi Id'si.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.MIME_XML">
+            <summary> 
+            XML Mime türü.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.Araclar.MIME_OCTETSTREAM">
+            <summary> 
+            XML Octet-stream türü.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha256OzetHesapla(System.String)">
+            <summary>
+            Verilen lokasyondaki dosyanın SHA256 özetini hesaplar.
+            </summary>
+            <param name="dosyaYolu">Özeti hesaplanacak dosyanın yolu.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha256OzetHesapla(System.IO.Stream)">
+            <summary>
+            Verilen STREAM'in SHA256 özetini hesaplar.
+            </summary>
+            <param name="dosya">Özeti hesaplanacak STREAM.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha512OzetHesapla(System.String)">
+            <summary>
+            Verilen lokasyondaki dosyanın SHA512 özetini hesaplar.
+            </summary>
+            <param name="dosyaYolu">Özeti hesaplanacak dosyanın yolu.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha512OzetHesapla(System.IO.Stream)">
+            <summary>
+            Verilen STREAM'in SHA512 özetini hesaplar.
+            </summary>
+            <param name="dosya">Özeti hesaplanacak STREAM.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha384OzetHesapla(System.String)">
+            <summary>
+            Verilen lokasyondaki dosyanın SHA384 özetini hesaplar.
+            </summary>
+            <param name="dosyaYolu">Özeti hesaplanacak dosyanın yolu.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Sha384OzetHesapla(System.IO.Stream)">
+            <summary>
+            Verilen STREAM'in SHA384 özetini hesaplar.
+            </summary>
+            <param name="dosya">Özeti hesaplanacak STREAM.</param>
+            <returns>Özet değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.OzetHesapla(System.IO.Stream,Cbddo.eYazisma.Tipler.OzetModu)">
+            <summary>
+            Verilen STREAM'in belirtilen algoritma ile özetini hesaplar.
+            </summary>
+            <param name="dosya">Özeti hesaplanacak STREAM.</param>
+            <param name="mod">Özetleme algoritması.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.Dagitim2Hedef(Cbddo.eYazisma.Xsd.CT_Dagitim)">
+            <summary>
+            Verilen CT_Dagitim nesnesini <see cref="T:Cbddo.eYazisma.Xsd.CT_Hedef"/> nesnesine dönüştürür.
+            </summary>
+            <param name="dagitim">Dönüştürülecek <see cref="T:Cbddo.eYazisma.Xsd.CT_Dagitim"/> nesnesi.</param>
+            <returns><see cref="T:Cbddo.eYazisma.Xsd.CT_Hedef"/> nesnesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            .Net 4.0'da bulunan <see cref="M:System.String.IsNullOrWhiteSpace(System.String)"/> fonksiyonu.
+            </summary>
+            <param name="s">Kontrol edilecek <see cref="T:System.String"/></param>
+            <returns>true if the value parameter is null or <see cref="F:System.String.Empty"/>, or if value consists exclusively of white-space characters.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.GercekSahisAdiOlustur(Cbddo.eYazisma.Xsd.CT_GercekSahis)">
+            <summary>
+            Verilen <see cref="T:Cbddo.eYazisma.Xsd.CT_GercekSahis"/> nesnesindeki bilgileri kullanarak gerçek şahıs adı oluşturur.
+            </summary>
+            <param name="olusturan">İsmi oluşturulacak <see cref="T:Cbddo.eYazisma.Xsd.CT_GercekSahis"/> nesnesi.</param>
+            <returns>Gerçek şahsın adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.TuzelSahisAdiOlustur(Cbddo.eYazisma.Xsd.CT_TuzelSahis)">
+            <summary>
+            Verilen <see cref="T:Cbddo.eYazisma.Xsd.CT_TuzelSahis"/> nesnesindeki bilgileri kullanarak tüzel şahıs adı oluşturur.
+            </summary>
+            <param name="olusturan">İsmi oluşturulacak <see cref="T:Cbddo.eYazisma.Xsd.CT_TuzelSahis"/> nesnesi.</param>
+            <returns>Tüzel şahsın adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.KurumKurulusAdiOlustur(Cbddo.eYazisma.Xsd.CT_KurumKurulus)">
+            <summary>
+            Verilen <see cref="T:Cbddo.eYazisma.Xsd.CT_KurumKurulus"/> nesnesindeki bilgileri kullanarak kurum/kuruluş adı oluşturur.
+            </summary>
+            <param name="olusturan">İsmi oluşturulacak <see cref="T:Cbddo.eYazisma.Xsd.CT_KurumKurulus"/> nesnesi.</param>
+            <returns>Kurum kuruluşun adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.OlusturanAdiOlustur(Cbddo.eYazisma.Xsd.CT_Olusturan)">
+            <summary>
+            Verilen <see cref="T:Cbddo.eYazisma.Xsd.CT_Olusturan"/> nesnesindeki bilgileri kullanarak oluşturan adı oluşturur.
+            </summary>
+            <param name="olusturan">İsmi oluşturulacak <see cref="T:Cbddo.eYazisma.Xsd.CT_Olusturan"/> nesnesi.</param>
+            <returns>Oluşturan adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketOzetiAl(System.Byte[])">
+            <summary>
+            Verilen sıralı byte nesnesini deserialize ederek <see cref="T:Cbddo.eYazisma.Xsd.CT_PaketOzeti"/> nesnesi oluşturur.
+            </summary>
+            <param name="paketOzetiVerisi">Deserialize edilecek sıralı byte.</param>
+            <returns>Oluşturulan <see cref="T:Cbddo.eYazisma.Xsd.CT_PaketOzeti"/> nesnesi.</returns>
+            <exception cref="T:System.ApplicationException">Sıralı byte'ın STREAM'e dönüştürülmesinde hata olduğunda oluşur.</exception>
+            <exception cref="T:System.ApplicationException">Deserialize hatası.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketOzetiAl(System.IO.Stream)">
+            <summary>
+            Verilen sıralı STREAM'i deserialize ederek <see cref="T:Cbddo.eYazisma.Xsd.CT_PaketOzeti"/> nesnesi oluşturur.
+            </summary>
+            <param name="paketOzetiStream">Deserialize edilecek STREAM.</param>
+            <returns>Oluşturulan <see cref="T:Cbddo.eYazisma.Xsd.CT_PaketOzeti"/> nesnesi.</returns>
+            <exception cref="T:System.ApplicationException">Deserialize hatası.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.NihaiOzetAl(System.IO.Stream)">
+            <summary>
+            Verilen sıralı STREAM'i deserialize ederek <see cref="T:Cbddo.eYazisma.Xsd.CT_NihaiOzet"/> nesnesi oluşturur.
+            </summary>
+            <param name="nihaiOzetStream">Deserialize edilecek STREAM.</param>
+            <returns>Oluşturulan <see cref="T:Cbddo.eYazisma.Xsd.CT_NihaiOzet"/> nesnesi.</returns>
+            <exception cref="T:System.ApplicationException">Deserialize hatası.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.ParafOzetiAl(System.IO.Stream)">
+            <summary>
+            Verilen sıralı STREAM'i deserialize ederek <see cref="T:Cbddo.eYazisma.Xsd.CT_ParafOzeti"/> nesnesi oluşturur.
+            </summary>
+            <param name="parafOzetiStream">Deserialize edilecek STREAM.</param>
+            <returns>Oluşturulan <see cref="T:Cbddo.eYazisma.Xsd.CT_ParafOzeti"/> nesnesi.</returns>
+            <exception cref="T:System.ApplicationException">Deserialize hatası.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.CopyStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Bir STREAM'deki veriyi diğerine kopyalar.
+            </summary>
+            <param name="source">Kaynak STREAM.</param>
+            <param name="target">Hedef STREAM.</param>
+            <exception cref="T:System.ArgumentNullException">Kaynak veya hedef STREAM'in null olması durumunda oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketSifreliMi(System.IO.Stream)">
+            <summary>
+            Verilen STREAM'de bulunan paketin şifreli bir paket olup olmadığı bilgisini döner.
+            </summary>
+            <param name="stream">Paketin bulunduğu STREAM.</param>
+            <returns>Paket şifreli ise true, aksi halde false döner.</returns>
+            <exception cref="T:System.Exception">Paketin geçerli olmaması durumunda oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketVersiyonuGetir(System.IO.Stream)">
+            <summary>
+            Paketi açar ve paket özelliklerinde bulunan versiyon numarasının ilk bölümünü getirir
+            </summary>
+            <example>
+            1.3 olan paket numarasını 1 olarak getirir.
+            2.0 olan paket numarasını 2 olarak getirir.
+            </example>
+            <param name="stream"></param>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketTipiGetir(System.IO.Stream)">
+            <summary>
+            Paketi açar ve paket özelliklerinde bulunan category alanından paketin tipini getirir.
+            </summary>
+            <example>
+            Category alanı eğer
+                RESMIYAZISMA ise PaketTipi.NormalPaket
+                RESMIYAZISMASIFRELI ise PaketTipi.SifreliPaket
+                RESMIYAZISMAGUNCELLEME ise PaketTipi.GuncellemePaketi
+            </example>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Araclar.PaketTipiGetir(System.String)">
+            <summary>
+            Paketi açar ve paket özelliklerinde bulunan category alanından paketin tipini getirir.
+            </summary>
+            <example>
+            Category alanı eğer
+                RESMIYAZISMA ise PaketTipi.NormalPaket
+                RESMIYAZISMASIFRELI ise PaketTipi.SifreliPaket
+                RESMIYAZISMAGUNCELLEME ise PaketTipi.GuncellemePaketi
+            </example>
+            <param name="dosyaYolu"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.BelgeHedef">
+            <summary>
+            BelgeHedef bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.BelgeHedef.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.BelgeHedef.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.BelgeHedef.HedefleriAl">
+            <summary>
+            BelgeHedef bileşenindeki hedefleri döner.
+            </summary>
+            <returns>Sıralı <see cref="T:Cbddo.eYazisma.Xsd.CT_Hedef"/> nesnesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.BelgeHedef.HedefEkle(Cbddo.eYazisma.Xsd.CT_Hedef)">
+            <summary>
+            BelgeHedef bileşenine hedef ekler.
+            </summary>
+            <param name="hedef">Eklenecek <see cref="T:Cbddo.eYazisma.Xsd.CT_Hedef"/> nesnesi.</param>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.GuncellemeBilgisi">
+            <summary>
+            Güncelleme paketi içerisindeki güncelleme bilgisini tanımlar.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemeBilgisi.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemeBilgisi.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemeBilgisi.GuncellemeEkle(Cbddo.eYazisma.Xsd.ST_GuncellemeTuru,System.Object)">
+            <summary>
+            Paket içerisine güncelleme ekler
+            </summary>
+            <param name="guncellemeTuru"></param>
+            <param name="guncelleme"></param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemeBilgisi.GuncellemeleriAl">
+            <summary>
+            Paket içerisine eklenmiş olan tüm güncelleme bilgilerini getirir
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.GuncellemePaketi">
+            <summary>
+            e-Yazışma paketini tanımlar. Paket oluşturma ve açma işlemleri bu sınıf ile yapılır.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.GuncellemePaketi.GuncellemeBilgisi">
+            <summary>
+            Paketin içerisindeki güncelleme bilgisine ilişkin bilgileri içeren nesneye ulaşılır.
+            </summary>
+            <value> 
+            GuncellemeBilgisi nesnesi.
+            </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.GuncellemePaketi.NihaiOzet">
+            <summary>
+            Paket içerisinde mühürlenen bileşenlere ait özet bilgilerinin bulunduğu objeye ulaşılır.
+            </summary>
+            <value> 
+            NihaiOzet nesnesi. 
+            </value>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.Ac(System.IO.Stream,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>
+            Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.
+            </summary>
+            <exception cref="T:System.Exception">Güncelleme veya açma modunda e-Yazışma standartlarına uygun bir paket olmaması durumunda EXCEPTION oluşur.</exception>
+            <param name="stream">Pakete ilişkin STREAM objesidir. </param>
+            <param name="paketModu">Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir.</param>
+            <returns>  İşlem yapılan paket objesi. </returns>
+            <example>  
+            Güncelleme paketi oluşturma örneği.
+            <code>
+            using (GuncellemePaketi paket = GuncellemePaketi.Ac(GuncellemePaketiDosyasiYolu, PaketModu.Olustur))
+            {
+                CT_Olusturan olusturan;
+                using (Paket orijinalPaket = Paket.Ac(PaketDosyasiYolu, PaketModu.Ac))
+                {
+                    olusturan = orijinalPaket.Ustveri.OlusturanAl();
+                    orijinalPaket.Kapat();
+                }
+                paket.GuncellemeBilgisi.GuncellemeEkle(ST_GuncellemeTuru.GuvenlikKodu, new CT_GuvenlikKoduDegisiklikBilgisi
+                {
+                    YeniGizlilikDerecesi = ST_KodGuvenlikKodu.YOK,
+                    DegistirmeTarihi = new DateTime(2022, 05, 05),
+                    Aciklama = "Belgenin gizlilik süresinin dolması nedeni ile Hizmete Özel olan gizlilik derecesi kaldırılmıştır",
+                    KomisyonKarariBelgeNo = "E-68244839-170.01-44181",
+                    KomisyonKarariBelgeId = "85E65A34-F460-4590-8BFA-A2DDB07E1B1D"
+                });
+                paket.GuncellemeBilgisiOlustur();
+                paket.OrijinalPaketEkle(new MemoryStream(File.ReadAllBytes(PaketDosyasiYolu)));
+                paket.CoreOlustur(Guid.NewGuid(), olusturan, "Gizlilik Derecesi Değiştirme");
+                if (!paket.NihaiOzetVarMi())
+                {
+                    paket.NihaiOzetOlustur();
+                }
+                Stream nihaiOzet = paket.NihaiOzetAl();
+                byte[] imzaliNihaiOzet = Imzala(StreamToByteArray(nihaiOzet));
+                paket.MuhurEkle(imzaliNihaiOzet);
+                paket.Kapat();
+            }        
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.Ac(System.String,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>
+            Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.
+            </summary>
+            <param name="dosyaYolu">Pakete ilişkin dosya yoludur. </param>
+            <param name="paketModu">Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir. </param>
+            <returns>   İşlem yapılan paket objesi. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.Kapat">
+            <summary>
+            İşlem yapılan paket için sonladırma işlemi yapılarak açılan kaynaklar kapatılır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketAciklamasiBelirle(System.String)">
+            <summary>
+            Paket açıklama değeri verilir.
+            </summary>
+            <param name="aciklama">Verilen açıklama değeri.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: An explanation of the content of the resource. [Example: 
+            Values might include an abstract, table of contents, 
+            reference to a graphical representation of content, and a 
+            free-text account of the content. end example] </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketSonYazdirilmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>
+            Paket son yazdılırılma tarihi verilir.
+            </summary>
+            <param name="sonYazdirilmaTarihi">Son yazdırılma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The date and time of the last printing. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketGuncellemeTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>
+            Paket güncelleme tarihi verilir.
+            </summary>
+            <param name="guncellemeTarihi">Güncelleme tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date on which the resource was changed. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketSonGuncelleyenBelirle(System.String)">
+             <summary>
+             Paket son güncelleyen bilgisi verilir.
+             </summary>
+             <param name="sonGuncelleyen">Son güncelleyen bilgisi.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The user who performed the last modification. The 
+            identification is environment-specific. [Example: A name, 
+            email address, or employee ID. end example] It is 
+            recommended that this value be as concise as possible. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketAnahtarKelimeleriBelirle(System.String)">
+             <summary>
+             Paket anahtar kelimeleri verilir.
+             </summary>
+             <param name="anahtarKelimeler">Anahtar kelimeler.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: A delimited set of keywords to support searching and 
+            indexing. This is typically a list of terms that are not 
+            available elsewhere in the properties.  
+             
+            The definition of this element uniquely allows for: 
+              Use of the xml:lang attribute to identify languages 
+              A mixed content model, such that keywords can be 
+            flagged individually 
+            
+            [Example: The following instance of the keywords element 
+            has keywords in English (Canada), English (U.S.), and French 
+            (France): 
+             
+             <keywords xml:lang="en-US"> 
+             color  
+             <value xml:lang="tr-TR">colour</value> 
+             <value xml:lang="en-CA">colour</value> 
+             <value xml:lang="fr-FR">couleur</value>
+             </keywords>         
+            end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketDurumuBelirle(System.String)">
+             <summary>
+             Paket durumu verilir.
+             </summary>
+             <param name="durum">Durum.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The status of the content. [Example: Values might include 
+            “Draft”, “Reviewed”, and “Final”.  end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketOlusturulmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>
+            Paket oluşturulma tarihi verilir.
+            </summary>
+            <param name="olusturulmaTarihi">Oluşturulma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date of creation of the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketBasligiBelirle(System.String)">
+            <summary>
+            Paket başlığı verilir.
+            </summary>
+            <param name="baslik">Başlık.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The name given to the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.PaketDiliBelirle(System.String)">
+            <summary>
+            Paket dili verilir.
+            </summary>
+            <param name="dil">Dil.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The language of the intellectual content of the resource. 
+            [Note: IETF RFC 3066 provides guidance on encoding to 
+            represent languages.  end note]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.CoreOlustur(System.Guid,Cbddo.eYazisma.Xsd.CT_Olusturan,System.String)">
+            <summary>
+            Core bileşenini oluşturur
+            </summary>
+            <param name="belgeId"></param>
+            <param name="olusturan"></param>
+            <param name="konu"></param>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.GuncellemeBilgisiAl">
+            <summary>
+            Paket içerisine kelenmiş güncelleme bilgisini alır
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.GuncellemeBilgisiOlustur">
+            <summary>
+            Ustveri bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.
+            </summary>
+            <remarks>
+            GuncellemeBilgisi bileşeninin varsayılan OzetModu ile özet değeri hesaplanarak NihaiOzet objesine eklenir. 
+            Oluşturma sırasında Ustveri bileşeni olası hatalara karşı kontrol edilir.
+            </remarks>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.GuncellemeBilgisiVarMi">
+            <summary>
+            Paket içerisine GuncellemeBilgisi bileşeni eklenmiş mi kontrol eder.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.OrijinalPaketEkle(System.IO.Stream,Cbddo.eYazisma.Tipler.PaketTipi)">
+            <summary>
+            Mevcut bir e-yazışma paketi veya güncelleme paketini oluşturulan paketin içerisine ekler
+            </summary>
+            <param name="paket">Paketi barındıran STREAM nesnesi.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.OrijinalPaketAl">
+            <summary>  
+            Paket içerisindeki OrijinalPaketi STREAM olarak döner. </summary>
+            <returns>   
+            Paket içerisindeki OrijinalPaketi STREAM nesnesi. OrijinalPaketi bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.OrijinalPaketVarMi">
+            <summary>
+            Paket içerisine OrijinalPaket eklenmiş mi kontrol eder
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.MuhurEkle(System.Byte[])">
+            <summary>
+            Paket içerisine NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-A) değeri eklenir.
+            </summary>
+            <param name="muhur">NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-A) değeri.</param>
+            <exception cref="T:System.ArgumentNullException">Muhur değeri null olduğunda oluşur.</exception>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.MuhurVarMi">
+            <summary> 
+            Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-A) değeri olup olmadığını döner. 
+            </summary>
+            <returns>   
+            Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri varsa true aksi durumda false döner. 
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.MuhurAl">
+            <summary>   
+            Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-A) değeri STREAM olarak döner. 
+            </summary>
+            <returns>   
+            Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-A) STREAM nesnesi. Mühürlü bileşen olmaması durumunda null döner. 
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.NihaiOzetVarMi">
+            <summary>   
+            Paket içerisindeki NihaiOzet bileşeni olup olmadığını döner. 
+            </summary>
+            <returns>   
+            Paket içerisindeki NihaiOzet bileşen varsa true aksi durumda false döner. 
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.NihaiOzetAl">
+            <summary>   
+            Paket içerisindeki NihaiOzet bileşenini STREAM olarak döner. 
+            </summary>
+            <returns>   
+            Paket içerisindeki NihaiOzet bileşeninin STREAM nesnesi. NihaiOzet bileşeni olmaması durumunda null döner. 
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.NihaiOzetOlustur">
+            <summary>
+            NihaiOzet bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.
+            </summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.NihaiOzetDogrula(Cbddo.eYazisma.Xsd.CT_NihaiOzet,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@)">
+            <summary>
+            Verilen NihaiOzet nesnesindeki özet değerleri ile paket içerisindeki bileşenlerin özet değerlerini doğrular.
+            </summary>
+            <param name="ozet">Doğrulanacak NihaiOzet nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.        
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.        
+            17  Imza bileşeni yok.
+            18  Core bileşeni yok.                
+            28  DigestItem değeri boş
+            29  DigestItem1 değeri boş
+            30  DigestItem ve DigestItem1 için kullanılan algoritmalar aynı.
+            31  DigestItem ve DigestItem1'den en az birinde SHA512 kullanılmalı.
+            34  NihaiOzet'te Güncelleme Bilgisi bileşeni özet değeri yok.
+            36  NihaiOzet'te Güncelleme Paket bileşeni özet değeri yok.
+            </returns>
+            <remarks> Java API için açıklama. .Net API kullanıyorsanız bu açıklamyı dikkate almayınız. 
+            Kullanılan Apache POI API'sı, 'core' bileşenine ulaşılmasına engel olduğundan dolayı, NihaiOzetDogrula metodu Core bileşeni özetini doğrulamaz. Bu nedenle NihaiÖzetDogrula metodundan sonra NihaiOzetCoreDogrula yardımcı metodu kullanılarak doğrulama işlemi tamamlanır. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.ReferansDogrula(Cbddo.eYazisma.Xsd.CT_Reference,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@)">
+            <summary>
+            Tek bir özet değeri ile paket içerisindeki ilgili bileşenin özet değerlerini doğrular.
+            </summary>
+            <param name="item">Doğrulanacak ÖzetDeğerini barındıran CT_Reference  nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.        
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.        
+            17  Imza bileşeni yok.
+            18  Core bileşeni yok.                
+            28  DigestItem değeri boş
+            29  DigestItem1 değeri boş
+            30  DigestItem ve DigestItem1 için kullanılan algoritmalar aynı.
+            31  DigestItem ve DigestItem1'den en az birinde SHA512 kullanılmalı.
+            34  NihaiOzet'te Güncelleme Bilgisi bileşeni özet değeri yok.
+            36  NihaiOzet'te Orijinal Paket bileşeni özet değeri yok.
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.GuncellemePaketi.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.NihaiOzet">
+            <summary>
+            NihaiOzet bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiOzet.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiOzet.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiOzet.Ekle(Cbddo.eYazisma.Tipler.OzetModu,System.Byte[],System.Byte[],System.Uri)">
+            <summary>
+            NihaiOzet bileşenine özet ekler.
+            </summary>
+            <param name="ozetModu">Eklenen özetin hangi algoritma ile alındığı bilgisi.</param>
+            <param name="ozetDegeri">Eklenecek özet değeri.</param>
+            <param name="uri">Eklenen özet değerine ilişkin bileşenin paket içindeki URI'si.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiOzet.OzetleriAl">
+            <summary>
+            NihaiOzet bileşenindeki özetleri döner.
+            </summary>
+            <returns>Sıralı <see cref="T:Cbddo.eYazisma.Xsd.CT_Reference"/> nesnesi.</returns>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.NihaiUstveri">
+            <summary>
+            NihaiUstveri bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.TarihBelirle(System.DateTime)">
+            <summary>
+            Belgenin tarihini belirler.
+            </summary>
+            <param name="tarih">Belge tarihi.</param>
+            <example><code>var islemTarihi = DateTime.Now;
+            paket.NihaiUstveri.TarihBelirle(islemTarihi);</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.TarihAl">
+            <summary>
+            Belge tarihini döner.
+            </summary>
+            <returns>Belge tarihi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.BelgeNoBelirle(System.String)">
+            <summary>
+            Belge numarasını belirler.
+            </summary>
+            <param name="belgeNo">Belge numarası.</param>
+            <example><code>paket.NihaiUstveri.BelgeNoBelirle("B.22.0.000.0.00.00.00-658/128");</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.BelgeNoAl">
+            <summary>
+            Belge numarasını döner.
+            </summary>
+            <returns>Belge numarası.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.ImzalariAl">
+            <summary>
+            BelgeImza bileşenindeki imzaları döner.
+            </summary>
+            <returns>Sıralı <see cref="T:Cbddo.eYazisma.Xsd.CT_Imza"/> nesnesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.ImzaEkle(Cbddo.eYazisma.Xsd.CT_Imza)">
+            <summary>
+            BelgeImza bileşenine hedef ekler.
+            </summary>
+            <param name="imza">Eklenecek <see cref="T:Cbddo.eYazisma.Xsd.CT_Imza"/> nesnesi.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.NihaiUstveri.KontrolEt">
+            <summary>
+            Üstverinin kurallara uygun olup olmadığını kontrol eder.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu">
+            <summary>
+            Paket Özeti bileşeni doğrulanması sırasında oluşan hatalara ilişkin kod değerleri.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.OZET_DEGERI_VERILMEMIS">
+            <summary>Ozet değeri verilmemiş.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.USTVERI_BILESENI_YOK">
+            <summary>Ustveri bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKETOZET_INDE_USTVERI_OZET_DEGERI_YOK">
+            <summary>PaketOzet'inde Ustveri özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.BELGEHEDEF_BILESENI_YOK">
+            <summary>BelgeHedef bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKETOZET_INDE_BELGEHEDEF_OZET_DEGERI_YOK">
+            <summary>PaketOzet'inde BelgeHedef özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.USTYAZI_BILESENI_YOK">
+            <summary>UstYazi bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKETOZET_INDE_USTYAZI_OZET_DEGERI_YOK">
+            <summary>PaketOzet'inde UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.REFERENCE_DEGERI_VERILMEMIS">
+            <summary>Reference değeri verilmemiş.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.URI_DEGERI_BOS">
+            <summary>URI değeri boş.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.DIGESTMETHOD_DEGERI_BOS">
+            <summary>DigestMethod değeri boş.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.ALGORITHM_DEGERI_BOS">
+            <summary>Algorithm değeri boş.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.DESTEKLENMEYEN_OZETMODU">
+            <summary>Desteklenmeyen OzetModu.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKET_BILESENI_ALINAMADI">
+            <summary>Paket bileşeni alınamadı.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKET_BILESENINE_AIT_HASH_HESAPLANAMADI">
+            <summary>Paket bileşenine ait hash hesaplanamadı.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.HASHLER_ESIT_DEGIL">
+            <summary>Hashler eşit değil.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.BELGEIMZA_BILESENI_YOK">
+            <summary>BelgeImza bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.IMZA_BILESENI_YOK">
+            <summary>Imza bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.CORE_BILESENI_YOK">
+            <summary>Core bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_USTVERI_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te Ustveri özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_BELGEHEDEF_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te BelgeHedef özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_USTYAZI_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_BELGEIMZA_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_IMZA_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_CORE_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PAKETOZETI_BILESENI_YOK">
+            <summary>PaketOzeti bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PARAFOZET_INDE_USTYAZI_OZET_DEGERI_YOK">
+            <summary>ParafOzet'inde UstYazi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PARAFOZET_INDE_USTVERI_OZET_DEGERI_YOK">
+            <summary>ParafOzet'inde Ustveri özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.DIGESTITEM_DEGERI_BOS">
+            <summary>DigestItem değeri boş</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.DIGESTITEM1_DEGERI_BOS">
+            <summary>DigestItem1 değeri boş</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.ALGORITHM_DEGERLERI_AYNI">
+            <summary>DigestItem ve DigestItem1 için kullanılan algoritmalar aynı.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.ALGORITHM_SHA512_KULLANILMAMIS">
+            <summary>DigestItem ve DigestItem1'den en az birinde SHA512 kullanılmalı.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.PARAF_IMZA_BILESENI_YOK">
+            <summary>Paraf imza bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.GUNCELLEME_BILGISI_BILESENI_YOK">
+            <summary>Güncelleme bilgisi bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_GUNCELLEME_BILGISI_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te Güncelleme bilgisi özet değeri yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.ORIJINAL_PANEL_BILESENI_YOK">
+            <summary>Orijinal paket bileşeni yok.</summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetDogrulamaHataKodu.NIHAIOZET_TE_ORIJINAL_PAKET_OZET_DEGERI_YOK">
+            <summary>NihaiOzet'te Orijinal paket özet değeri yok.</summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi">
+            <summary>
+            PaketOzeti bileşeninin doğrulanması sırasında ortaya çıkan hatalara ilişkin bilgiler.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi.Uri">
+            <summary>
+            Hata oluşan bileşenin paket içindeki URI'si.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi.Hata">
+            <summary>
+            Oluşan hatanın açıklaması.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi.HataKodu">
+            <summary>
+            Hata kodu.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi.InnerException">
+            <summary>
+            Inner exception.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.OzetModu">
+            <summary>
+            Özetleme algoritmaları.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetModu.Yok">
+            <summary>
+            Yok.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetModu.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetModu.SHA512">
+            <summary>
+            SHA512
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.OzetModu.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.Paket">
+             <summary>
+             <example>
+             Yeni bir paket oluşturma örneği
+             <code>
+             static void PaketOlustur(string dosyaYolu)
+             {
+                 var paketId = Guid.NewGuid();
+                 var islemTarihi = DateTime.Now;
+                 var paketKonu = new TextType() { Value = "e-Yazışma Test Paketi" };
+                 var ek1 = new CT_Ek()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString() },    // Zorunlu alan
+                     BelgeNo = "72131250-010.03-936",
+                     Tur = ST_KodEkTuru.DED,        // Zorunlu alan
+                     DosyaAdi = System.IO.Path.GetFileName(ekDosyasi1),
+                     MimeTuru = "application/pdf",
+                     Ad = new TextType() { Value = "Birinci ek" },
+                     SiraNo = 1,     // Zorunlu alan
+                     Aciklama = new TextType() { Value = "Birinci ek açıklaması" },
+                     OzId = new IdentifierType()
+                     {
+                         Value = "A14A4DCC-AE6A-4FD5-AAB3-8A33DC6125DD",
+                         schemeID = "GUID"     // Zorunlu alan
+                     },
+                     ImzaliMi = true,
+                     ImzaliMiSpecified = true
+                 };
+             
+                 var ek2 = new CT_Ek()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString() },     // Zorunlu alan
+                     BelgeNo = "35826416-020-987",
+                     Tur = ST_KodEkTuru.HRF,       // Zorunlu alan
+                     Ad = new TextType() { Value = "Harici referans" },
+                     SiraNo = 2,        // Zorunlu alan
+                     Aciklama = new TextType() { Value = "Hairici referans açıklaması" },
+                     Referans = "http://www.bilgitoplumu.gov.tr/Documents/1/Raporlar/Calisma_Raporu_2.pdf",
+                     OzId = new IdentifierType()
+                     {
+                         Value = "0C9C4D34-D370-46C2-A996-0FADC0FA591F",
+                         schemeID = "GUID"       // Zorunlu alan
+                     },
+                     ImzaliMi = false,
+                     ImzaliMiSpecified = true,
+                     Ozet = new CT_Ozet()
+                     {
+                         OzetAlgoritmasi = new CT_OzetAlgoritmasi() { Algorithm = Araclar.ALGORITHM_SHA256 },    // Zorunlu alan
+                         OzetDegeri = Convert.FromBase64String("X4TAKrqfQNl9IR+h2yU/bAkNe0w=")   // Zorunlu alan
+                     }
+                 };
+             
+                 var ek3 = new CT_Ek()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString() },     // Zorunlu alan
+                     BelgeNo = "48154937-612.01.03-942",
+                     Tur = ST_KodEkTuru.FZK,        // Zorunlu alan
+                     Ad = new TextType() { Value = "Fiziksel ek" },
+                     SiraNo = 3,     // Zorunlu alan
+                     Aciklama = new TextType() { Value = "İki adet CD" },
+                     OzId = new IdentifierType() { Value = "45A778BA-B943-4B68-8504-71854DF0DDFF", schemeID = "GUID" },
+                     ImzaliMi = false,
+                     ImzaliMiSpecified = true
+                 };
+             
+                 var ek4 = new CT_Ek()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString() },     // Zorunlu alan
+                     BelgeNo = "65410891-020-408",
+                     Tur = ST_KodEkTuru.DED,     // Zorunlu alan
+                     DosyaAdi = System.IO.Path.GetFileName(ekDosyasi2),
+                     MimeTuru = "application/MSWord",
+                     Ad = new TextType() { Value = "İmzasız ek" },
+                     SiraNo = 4,     // Zorunlu alan
+                     Aciklama = new TextType() { Value = "İmzasız ek açıklaması" },
+                     OzId = new IdentifierType()
+                     {
+                         Value = "76E16DDA-AB44-46DB-B615-42FBE7E9BEE3",
+                         schemeID = "GUID"
+                     },
+                     ImzaliMi = false,
+                     ImzaliMiSpecified = true
+                 };
+             
+                 var ek5 = new CT_Ek()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString(), EYazismaIdMi = true },     // Zorunlu alan
+                     BelgeNo = "65410891-020-444",
+                     Tur = ST_KodEkTuru.DED,            // Zorunlu alan
+                     DosyaAdi = System.IO.Path.GetFileName(ekDosyasi3),
+                     MimeTuru = "application/pdf",
+                     Ad = new TextType() { Value = "İkinci ek" },
+                     SiraNo = 5,         // Zorunlu alan
+                     Aciklama = new TextType() { Value = "İkinci ek açıklaması" },
+                     OzId = new IdentifierType() { Value = "D7D16B9C-7419-451B-82B0-34D334572464", schemeID = "GUID" },
+                     ImzaliMi = true,
+                     ImzaliMiSpecified = true
+                 };
+             
+                 var ilgiA = new CT_Ilgi()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString(), EYazismaIdMi = false },       // Zorunlu alan
+                     BelgeNo = "65410891-020-480",
+                     Tarih = new DateTime(2009, 11, 5),
+                     TarihSpecified = true,
+                     Etiket = "a",       // Zorunlu alan
+                     EkId = ek1.Id.Value,
+                     Ad = new TextType() { Value = "İlgi (a) yazı" },
+                     Aciklama = new TextType() { Value = "İlgi (a) yazının açıklaması" },
+                     OzId = new IdentifierType()
+                     {
+                         Value = "1C26C956-AE45-4DC1-BE86-1B8278A34904",
+                         schemeID = "GUID"       // Zorunlu alan
+                     }
+                 };
+             
+                 var ilgiB = new CT_Ilgi()
+                 {
+                     Id = new CT_Id() { Value = Guid.NewGuid().ToString(), EYazismaIdMi = false },    // Zorunlu alan   
+                     BelgeNo = "48154937-612.01.03-945",
+                     Tarih = new DateTime(2009, 11, 5),
+                     TarihSpecified = true,
+                     Etiket = "b",      // Zorunlu alan                
+                     Ad = new TextType() { Value = "İlgi (b) yazı" },
+                     Aciklama = new TextType() { Value = "İlgi (b) yazının açıklaması" },
+                     OzId = new IdentifierType()
+                     {
+                         Value = "1C26C956-AE45-4DC1-BE86-1B8278A34904",
+                         schemeID = "GUID"
+                     }
+                 };
+             
+                 var ilgili = new CT_GercekSahis()   // Seçimli zorunlu (Kurum, gerçek, tüzel)
+                 {
+                     Kisi = new CT_Kisi()        // Zorunlu alan
+                     {
+                         OnEk = new TextType() { Value = "Uzman" },
+                         IlkAdi = new NameType() { Value = "Hüseyin" },      // Zorunlu alan
+                         Soyadi = new NameType() { Value = "Yetmez" }        // Zorunlu alan
+                     },
+                     Gorev = new TextType() { Value = "Birim Sorumlusu" },
+                     TCKN = "12345678903",
+                     IletisimBilgisi = new CT_IletisimBilgisi()
+                     {
+                         Telefon = "0-505-4821111",
+                         TelefonDiger = "0-312-2444444"
+                     }
+                 };
+             
+                 var olusturan = new CT_KurumKurulus()
+                 {
+                     KKK = "24301013",     // Zorunlu alan
+                     Adi = new NameType() { Value = "Başbakanlık" },
+                     IletisimBilgisi = new CT_IletisimBilgisi()
+                     {
+                         Telefon = "0-312-2947586",
+                         EPosta = "info@basbakanlik.gov.tr",
+                         Faks = "0-312-2663333",
+                         Adres = new TextType() { Value = "Kızılay" },
+                         Ilce = new NameType() { Value = "Çankaya" },
+                         Il = new NameType() { Value = "Ankara" },
+                         Ulke = new NameType() { Value = "Türkiye" },
+                         WebAdresi = "www.basbakanlik.gov.tr"
+                     }
+                 };
+             
+                 var dagitim1 = new CT_Dagitim()
+                 {
+                     DagitimTuru = ST_KodDagitimTuru.GRG,        // Zorunlu alan
+                     Ivedilik = ST_KodIvedilik.ACL,      // Zorunlu alan
+                     Item = new CT_KurumKurulus()        // Seçimli zorunlu
+                     {
+                         KKK = "24301050",      // Zorunlu alan
+                         Adi = new NameType() { Value = "Adalet Bakanlığı" },
+                         IletisimBilgisi = new CT_IletisimBilgisi()
+                         {
+                             Telefon = "0-312-2665555",
+                             EPosta = "info@adalet.gov.tr",
+                             Faks = "0-312-2665556",
+                             Adres = new TextType() { Value = "Kızılay" },
+                             Ilce = new NameType() { Value = "Çankaya" },
+                             Il = new NameType() { Value = "Ankara" },
+                             Ulke = new NameType() { Value = "Türkiye" },
+                             WebAdresi = "www.adalet.gov.tr"
+                         },
+                         BirimKKK = "24301051"
+                     },
+                     KonulmamisEkListesi = new CT_KonulmamisEk[]
+                     {
+                         new CT_KonulmamisEk()       // Zorunlu alan
+                         {
+                             EkId = konulmamisEk.Id.Value     // Zorunlu alan
+                         }
+                     }
+                 };
+             
+                 var dagitim2 = new CT_Dagitim()
+                 {
+                     DagitimTuru = ST_KodDagitimTuru.BLG, // Zorunlu alan
+                     Ivedilik = ST_KodIvedilik.GNL,      // Zorunlu alan
+                     Item = new CT_KurumKurulus()
+                     {
+                         KKK = "24322010",     // Zorunlu alan
+                         Adi = new NameType() { Value = "Sağlık Bakanlığı" }
+                     }
+                 };
+                 var dogrulamaBilgisi = new CT_DogrulamaBilgisi
+                 {
+                     DogrulamaAdresi = "https://www.turkiye.gov.tr/belge-dogrulama"
+                 }; 
+                 using (var paket = Paket.Ac(dosyaYolu, PaketModu.Olustur))
+                 {
+                     paket.Ustveri.BelgeIdBelirle(paketId);      // Zorunlu alan
+                     paket.Ustveri.DogrulamaBilgisiEkle(dogrulamaBilgisi); //Zorunlu alan
+                     paket.Ustveri.KonuBelirle(paketKonu);       // Zorunlu alan
+                     paket.Ustveri.GuvenlikKoduBelirle(ST_KodGuvenlikKodu.HZO);      // Zorunlu alan
+                     paket.Ustveri.GuvenlikGecerlilikTarihiBelirle(islemTarihi.AddYears(10));
+                     paket.Ustveri.OzIdBelirle("8CEA7FF7-75F2-4CCF-B3C1-1B9B2054E8E9", "GUID");
+                     paket.Ustveri.DagitimEkle(dagitim1);        // Zorunlu alan
+                     paket.Ustveri.DagitimEkle(dagitim2);        // Zorunlu alan
+                     paket.Ustveri.EkEkle(ek1);
+                     paket.Ustveri.EkEkle(ek2);
+                     paket.Ustveri.EkEkle(ek3);
+                     paket.Ustveri.EkEkle(ek4);
+                     paket.Ustveri.EkEkle(ek5);
+                     paket.Ustveri.IlgiEkle(ilgiA);
+                     paket.Ustveri.IlgiEkle(ilgiB);
+                     paket.Ustveri.DilBelirle("tur");
+                     paket.Ustveri.OlusturanBelirle(olusturan);      // Zorunlu alan
+                     paket.Ustveri.IlgiliEkle(ilgili);
+                     paket.Ustveri.DosyaAdiBelirle(System.IO.Path.GetFileName(ustYaziDosyasi));      // Zorunlu alan
+                     paket.Ustveri.SdpEkle(new CT_SDP() { Ad = "İç Genelgeler", Aciklama = "", Kod = "010.06.01" });
+                     paket.Ustveri.DigerSdpEkle(new CT_SDP() { Ad = "Duyurular", Aciklama = "", Kod = "010.07.01" });
+                     paket.Ustveri.DigerSdpEkle(new CT_SDP() { Ad = "Rehber Kılavuz", Aciklama = "", Kod = "010.08" });
+            
+                     paket.EkEkle(ek1, ekDosyasi1);
+                     paket.EkEkle(ek4, ekDosyasi2, OzetModu.Yok);
+                     paket.EkEkle(ek5, ekDosyasi3, OzetModu.SHA256);
+                     paket.UstYaziEkle(ustYaziDosyasi, "application/pdf", OzetModu.SHA256);        // Zorunlu alan
+            
+                     paket.EkleriKontrolEt();
+                     paket.IlgileriKontrolEt();
+            
+                     paket.UstveriOlustur();     // Zorunlu alan
+             
+                     paket.ParafOzetiOlustur();
+             
+                     Stream parafOzeti = paket.ParafOzetiAl();
+                     Byte[] imzaliParafOzeti = Imzala(StreamToByteArray(parafOzeti));
+                     paket.ParafImzaEkle(imzaliParafOzeti);         // Zorunlu alan
+             
+                     paket.PaketOzetiOlustur();
+                     Stream paketOzeti = paket.PaketOzetiAl();
+                     Byte[] imzaliPaketOzeti = Imzala(StreamToByteArray(paketOzeti));
+                     paket.ImzaEkle(imzaliPaketOzeti);         // Zorunlu alan
+                 
+                    var imzaci1 =  new CT_Imza()
+                     {
+                         Imzalayan = new CT_GercekSahis()        // Zorunlu alan
+                         {
+                             Kisi = new CT_Kisi()        // Zorunlu alan
+                             {
+                                 IlkAdi = new NameType() { Value = "Osman" },        // Zorunlu alan
+                                 Soyadi = new NameType() { Value = "Yeşil" },        // Zorunlu alan
+                                 Unvan = new NameType() { Value = "Büyükelçi" },
+                                 IkinciAdi = new NameType() { Value = "Murat" },
+                                 OnEk = new TextType() { Value = "Dr." }
+                             },
+                             TCKN = "12345678902",
+                             Gorev = new TextType() { Value = "Daire Başkanı" },
+                             IletisimBilgisi = new CT_IletisimBilgisi()
+                             {
+                                 Telefon = "0-312-2666666",
+                                 TelefonDiger = "0-532-4828282",
+                                 EPosta = "om_yesil@xyz.com.tr",
+                                 Faks = "0-312-2888888",
+                                 Adres = new TextType() { Value = "T.C Cumhurbaşkanlığı Külliyesi 06560 Beştepe - Ankara" },
+                                 Ilce = new NameType() { Value = "Çankaya" },
+                                 Il = new NameType() { Value = "Ankara" },
+                                 Ulke = new NameType() { Value = "Türkiye" },
+                                 WebAdresi = "https://www.cbddo.gov.tr/"
+                             }
+                         },
+                         YetkiDevreden = new CT_GercekSahis()
+                         {
+                             Kisi = new CT_Kisi()   // Zorunlu alan
+                             {
+                                 IlkAdi = new NameType() { Value = "Hasan" },        // Zorunlu alan
+                                 Soyadi = new NameType() { Value = "Aydın" },        // Zorunlu alan
+                                 Unvan = new NameType() { Value = "Genel Müdür" },
+                                 IkinciAdi = new NameType() { Value = "Şaban" },
+                                 OnEk = new TextType() { Value = "Uzman" }
+                            },
+                             TCKN = "12345588901",
+                            Gorev = new TextType() { Value = "Genel Müdür" },
+                             IletisimBilgisi = new CT_IletisimBilgisi()
+                             {
+                                 Telefon = "0-312-2999999",
+                                 TelefonDiger = "0-532-4827777",
+                                 EPosta = "iletisim@abc.com",
+                                 Faks = "0-312-2946345",
+                                 Adres = new TextType() { Value = "TUİK Necatibey Cad. No:112" },
+                                 Ilce = new NameType() { Value = "Çankaya" },
+                                 Il = new NameType() { Value = "Ankara" },
+                                 Ulke = new NameType() { Value = "Türkiye" },
+                                 WebAdresi = "www.tuik.gov.tr"
+                             }
+                         },
+                         VekaletVeren = new CT_GercekSahis()
+                         {
+                             Kisi = new CT_Kisi()  // Zorunlu alan
+                             {
+                                 IlkAdi = new NameType() { Value = "Semih" },  // Zorunlu alan
+                                 Soyadi = new NameType() { Value = "Yılmaz" },  // Zorunlu alan
+                                 Unvan = new NameType() { Value = "Dr." }
+                             },
+                             Gorev = new TextType() { Value = "Müsteşar" }
+                         },
+                         Makam = new NameType() { Value = "Müsteşar" },
+                         Amac = new TextType() { Value = "Onay" },
+                         Aciklama = new TextType() { Value = "İmzanın açıklaması" },
+                         Tarih = DateTime.Now,
+                         TarihSpecified = true
+                     };
+             
+             
+                    var imzaci2 = new CT_Imza()
+                     {
+                         Imzalayan = new CT_GercekSahis()        // Zorunlu alan
+                         {
+                             Kisi = new CT_Kisi()        // Zorunlu alan
+                             {
+                                 IlkAdi = new NameType() { Value = "Metin" },        // Zorunlu alan
+                                 Soyadi = new NameType() { Value = "Demir" },        // Zorunlu alan
+                                 OnEk = new TextType() { Value = "Dr." }
+                             },
+                             TCKN = "98787678902",
+                             Gorev = new TextType() { Value = "Şube Müdürü" },
+                         },
+                         Makam = new NameType() { Value = "Daire" },
+                         Amac = new TextType() { Value = "Onay" },
+                         Aciklama = new TextType() { Value = "İmzanın açıklaması" },
+                         Tarih = DateTime.Now,
+                         TarihSpecified = true
+                     };
+             
+                     paket.NihaiUstveri.BelgeNoBelirle("1234");
+                     paket.NihaiUstveri.TarihBelirle(DateTime.Now);
+             
+                     paket.NihaiUstveri.ImzaEkle(imzaci1);
+                     paket.NihaiUstveri.ImzaEkle(imzaci2);
+                     paket.NihaiUstveriOlustur();
+                     paket.CoreOlustur();
+                     paket.NihaiOzetOlustur();
+             
+                     Stream nihaiOzet = paket.NihaiOzetAl();
+                     Byte[] imzaliNihaiOzet = Imzala(StreamToByteArray(nihaiOzet));
+                     paket.MuhurEkle(imzaliNihaiOzet);         // Zorunlu alan
+             
+                     paket.Kapat();
+                 }
+                 Console.WriteLine("Paket oluşturuldu.");
+             }
+             </code>
+             Yardımcı metodlar.
+             <code>
+             static byte[] Imzala(byte[] imzalanacakVeri)
+             {
+                 return new byte[] { 1, 2, 3 }; // burada imzalanacakVeri herhangi bir imzala API'si ile imzalanarak imzali veri donulur
+             }
+             
+             static byte[] Muhurle(byte[] muhurlenecekVeri)
+             {
+                 return new byte[] { 1, 2, 3 }; // burada muhurlenecekVeri herhangi bir muhur API'si ile muhurlenerek donulur
+             }
+             
+             static byte[] StreamToByteArray(Stream input)
+             {
+                 byte[] buffer = new byte[16 * 1024];
+                 using (MemoryStream ms = new MemoryStream())
+                 {
+                     int read;
+                     while ((read = input.Read(buffer, 0, buffer.Length)) > 0)
+                     {
+                         ms.Write(buffer, 0, read);
+                     }
+                     return ms.ToArray();
+                 }
+             }
+             
+             static byte[] PaketSifrele(String dosyaYolu)
+             {
+                 return System.IO.File.ReadAllBytes(dosyaYolu);  // Burada, şifrelenen paketin geri döndürülmesi gerekiyor.
+             }
+             </code>
+             </example>
+             </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.Ustveri">
+            <summary>   Belgeye ait üstveri alanlarını barıdıran objeye ulaşılır. </summary>
+            <value> Ustveri nesnesi. </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.NihaiUstveri">
+            <summary>   Belgeye ait nihai üstveri alanlarını barıdıran objeye ulaşılır. </summary>
+            <value> NihaiUstveri nesnesi. </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.PaketOzeti">
+            <summary>Paket içerisinde imzalanan bileşenlere ait özet bilgilerinin bulunduğu objeye ulaşılır.</summary>
+            <value> PaketOzeti nesnesi. </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.ParafOzeti">
+            <summary>Paket içerisinde paraflanan bileşenlere ait özet bilgilerinin bulunduğu objeye ulaşılır.</summary>
+            <value> ParafOzeti nesnesi. </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.NihaiOzet">
+            <summary>Paket içerisinde mühürlenen bileşenlere ait özet bilgilerinin bulunduğu objeye ulaşılır.</summary>
+            <value> NihaiOzet nesnesi. </value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.Paket.VarsayilanOzetModu">
+            <summary>
+            PaketOzeti'ine eklenecek özetlerin oluşturulmasında kullanılacak algoritmayı belirtir.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.VersiyonNumarasiKontrolEt(System.IO.Packaging.Package)">
+            <summary>
+            Api versiyon numarası kontrol eder. Eğer oluşturulan paketin versiyon numarası 2'den küçük ise hata verir.
+            </summary>
+            <param name="package"></param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.Ac(System.IO.Stream,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.</summary>
+            <param name="stream">       Pakete ilişkin STREAM objesidir. </param>
+            <param name="paketModu">    Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir. </param>
+            <returns>  İşlem yapılan paket objesi. </returns>
+            <example>
+            Mevcut bir paketi açma örneği.
+            <code>
+            static void PaketAc(String dosyaYolu)
+            {
+                using (var paket = Paket.Ac(dosyaYolu, PaketModu.Ac))
+                {
+                    var paketOzetiDogrulamaSonucu = new List&lt;OzetDogrulamaHatasi&gt;();
+                    var nihaiOzetDogrulamaSonucu = new List&lt;OzetDogrulamaHatasi&gt;();
+            
+                    if ((paket.Ustveri.EkleriAl() != null) &amp;&amp; (paket.Ustveri.EkleriAl().Count() &gt; 0))
+                    {
+                        var dedEkler = paket.Ustveri.EkleriAl().Where(x =&gt; x.Tur == ST_KodEkTuru.DED);
+                        if ((dedEkler != null) &amp;&amp; (dedEkler.Count() &gt; 0))
+                        {
+                            if (!System.IO.Directory.Exists(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu)))
+                                System.IO.Directory.CreateDirectory(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu));
+                            foreach (var dedEk in dedEkler)
+                            {
+                                var ek = paket.EkAl(new Guid(dedEk.Id.Value));
+                                if (ek != null)
+                                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + dedEk.DosyaAdi))
+                                    {
+                                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(ek, s);
+                                    }
+                            }
+                        }
+                    }
+            
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\ImzaCades.imz"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(paket.ImzaAl(), s);
+                    }
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\ParafImzaCades.imz"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(paket.ParafImzaAl(), s);
+                    }
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\MuhurCades.imz"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(paket.MuhurAl(), s);
+                    }
+            
+                    var belgeImza = paket.BelgeImzaAl();
+                    var muhur = paket.MuhurAl();
+                    var nihaiOzetler = paket.NihaiOzet.OzetleriAl();
+                    var nihaiOzet = paket.NihaiOzetAl();
+                    var paketOzetleri = paket.PaketOzeti.OzetleriAl();
+                    var paketOzetiDogrulamasi = paket.PaketOzetiDogrula(Araclar.PaketOzetiAl(paket.PaketOzetiAl()), ref paketOzetiDogrulamaSonucu);
+                    var nihaiOzetDogrulamasi = paket.NihaiOzetDogrula(Araclar.NihaiOzetAl(paket.NihaiOzetAl()), ref nihaiOzetDogrulamaSonucu);
+                    var balgeId = paket.Ustveri.BelgeIdAl();
+                    var dagitimlar = paket.Ustveri.DagitimlariAl();
+                    var dil = paket.Ustveri.DilAl();
+                    var ekler = paket.Ustveri.EkleriAl();
+                    var guvenlikGecerlilikTarihi = paket.Ustveri.GuvenlikGecerlilikTarihiAl();
+                    var guvenlikKodu = paket.Ustveri.GuvenlikKoduAl();
+                    var ilgiler = paket.Ustveri.IlgileriAl();
+                    var ilgililer = paket.Ustveri.IlgilileriAl();
+                    var konu = paket.Ustveri.KonuAl();
+                    var mimeTuru = paket.Ustveri.MimeTuruAl();
+                    var olusturan = paket.Ustveri.OlusturanAl();
+                    var ozId = paket.Ustveri.OzIdAl();
+                    var ustVeri = paket.UstveriAl();
+                    var ustYazi = paket.UstYaziAl();
+                    var parafOzeti = paket.ParafOzetiAl();
+                    var paketOzeti = paket.PaketOzetiAl();
+                    var nihaiUstveri = paket.NihaiUstveriAl();
+                    var nihaiOzet = paket.NihaiOzetAl();
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "Ustveri.xml"))
+                    {
+                        KaCbddolkinma.eYazisma.Tipler.Araclar.CopyStream(ustVeri, s);
+                    }
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "ustyazi.pdf"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(ustYazi, s);
+                    }
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "ParafOzeti.xml"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(parafOzeti, s);
+                    }
+                    
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "PaketOzeti.xml"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(paketOzeti, s);
+                    }
+            
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "NihaiUstveri.xml"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(nihaiUstveri, s);
+                    }
+                
+                    using (Stream s = File.OpenWrite(System.IO.Path.GetFileNameWithoutExtension(dosyaYolu) + "\\" + "NihaiOzet.xml"))
+                    {
+                        Cbddo.eYazisma.Tipler.Araclar.CopyStream(nihaiOzet, s);
+                    }
+                }
+            } 
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.Ac(System.String,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.</summary>
+            <param name="dosyaYolu">Pakete ilişkin dosya yoludur. </param>
+            <param name="paketModu">Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir. </param>
+            <returns>   İşlem yapılan paket objesi. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.IlgileriKontrolEt">
+            <summary>Üstveri'de ek olarak belirtilmiş ilgiye ilişkin ekin paket içerisinde bulunup bulunmadığını kontrol eder.</summary>
+            <remarks>Paket oluşturma sırasında, <see cref="M:Cbddo.eYazisma.Tipler.Paket.Kapat"/> metodundan önce kullanılmalıdır.</remarks>
+            <exception cref="T:System.ApplicationException">Ek olarak belirtilmiş ilgiye ait ek paket içinde yoksa oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.EkleriKontrolEt(Cbddo.eYazisma.Xsd.IdentifierType)">
+            <summary>Üstveri'de Dahili Elektronik Dosya türünden ek olarak belirtilmiş ekin paket içerisinde bulunup bulunmadığını kontrol eder. Pakete eklenmiş ek dosyalarının üstveride belirtilip belirtilmediğini kontrol eder.</summary>
+            <remarks>Paket oluşturma sırasında, <see cref="M:Cbddo.eYazisma.Tipler.Paket.Kapat"/> metodundan önce kullanılmalıdır.</remarks>
+            <param name="dagitimIdentifier">Ekleri kontrol ederken verilen (KKK, TCKN veya Id) değerine göre dağıtım için ek konulmamış ise hata vermez</param>
+            <exception cref="T:System.ApplicationException">Üstveri ile paket içerisindeki eklerin uyumsuz olması durumunda oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.CoreOlustur">
+            <summary>Core bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+            <remarks> Java API için açıklama. .Net API kullanıyorsanız bu açıklamyı dikkate almayınız. 
+            Kullanılan Apache POI API'sı, 'core' bileşeninin oluşturulması aşamasına müdahaleye engel olduğundan dolayı, nihaiOzeteCoreEkle yardımcı metod kullanılarak Core bileşeni özeti NihaiOzet'e eklenir. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketOzetiOlustur">
+            <summary>PaketOzeti bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafOzetiOlustur">
+            <summary>ParafOzeti bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiOzetOlustur">
+            <summary>NihaiOzet bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.Kapat">
+            <summary>İşlem yapılan paket için sonladırma işlemi yapılarak açılan kaynaklar kapatılır.</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cbddo.eYazisma.Tipler.Paket.UstveriVarMi" -->
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstveriAl">
+            <summary>   Paket içerisindeki Üstveri elemanını STREAM olarak verir. </summary>
+            <returns>   Üstveri bileşenine ait STREAM nesnesini döner. Bileşenin bulunmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstveriOlustur">
+            <summary>Ustveri bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <remarks>Ustveri bileşeninin varsayılan OzetModu ile özet değeri hesaplanarak PaketOzeti ve NihaiOzet objesine eklenir. Oluşturma sırasında Ustveri bileşeni olası hatalara karşı kontrol edilir.</remarks>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiUstveriVarMi">
+            <summary>   Paket içerisindeki nihai üstveri bileşeni olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki nihai üstveri bileşeni varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiUstveriAl">
+            <summary>   Paket içerisindeki NihaiÜstveri elemanını STREAM olarak verir. </summary>
+            <returns>   NihaiÜstveri bileşenine ait STREAM nesnesini döner. Bileşenin bulunmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiUstveriOlustur">
+            <summary>NihaiUstveri bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <remarks>NihaiUstveri bileşeninin varsayılan OzetModu ile özet değeri hesaplanarak NihaiOzet objesine eklenir. Oluşturma sırasında NihaiUstveri bileşeni olası hatalara karşı kontrol edilir.</remarks>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstYaziEkle(System.String,System.String,Cbddo.eYazisma.Tipler.OzetModu)">
+            <summary>   Paket içerisine üst yazı bileşeni ekler. </summary>
+            <param name="dosyaYolu">    Üst yazı bileşenine ilişkin dosya yoludur. </param>
+            <param name="mimeTuru">     Üst yazı bileşeni dosyasının mime türüdür. </param>
+            <param name="ozetModu">     Eklenen üst yazıya ait özet değerinin paket özeti bileşenine hangi algoritma ile ekleneceğini belirtir. </param>
+            ### <exception cref="T:System.SystemException">          Daha önceden üst yazı eklenmiş bir pakete tekrar üst yazı eklenemez. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Dosya yolu boş veya Mime türü null olamaz. </exception>
+            ### <exception cref="T:System.Exception">                Açma modunda kullanıldığında EXCEPTIONoluşur. </exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstYaziEkle(System.IO.Stream,System.String,System.String,Cbddo.eYazisma.Tipler.OzetModu)">
+            <summary>   Paket içerisine üst yazı bileşeni ekler. </summary>
+            <exception cref="T:System.SystemException">          Daha önceden üst yazı eklenmiş bir pakete tekrar üst yazı eklenemez. </exception>
+            <exception cref="T:System.ArgumentNullException">    Dosya yolu ve mime türü  boş veya null olamaz. </exception>
+            <exception cref="T:System.Exception">                Açma modunda kullanıldığında EXCEPTION oluşur. </exception>
+            <param name="dosya">    Üst yazı bileşenine ilişkin STREAM'dir. </param>
+            <param name="dosyaAdi"> Eklenen üst yazı dosyasının adıdır. Dosya adında bulunan boşluklar kaldırılır ve Türkçe karakterler İngilizce olanlarla değiştirilir.</param>
+            <param name="mimeTuru"> Üst yazı bileşeni dosyasının mime türüdür. </param>
+            <param name="ozetModu"> Eklenen üst yazıya ait özet değerinin paket özeti bileşenine hangi algoritma ile ekleneceğini belirtir. </param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstYaziVarMi">
+            <summary>   Paket içerisindeki üst yazı bileşeni olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki üst yazı bileşeni varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.UstYaziAl">
+            <summary>   Paket içerisindeki üst yazı bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki üst yazı bileşeni STREAM'i. UstYazi bileşeni yoksa null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.EkEkle(Cbddo.eYazisma.Xsd.CT_Ek,System.String,Cbddo.eYazisma.Tipler.OzetModu)">
+            <summary>   Paket içerisine ek bileşeni ekler. </summary>
+            <exception cref="T:System.ArgumentNullException">    Dosya yolu boş veya null olamaz. </exception>
+            <exception cref="T:System.Exception">                Verilen ek dosyası bulunamazsa EXCEPTION oluşur. </exception>
+            <param name="ek">           Eklenen ek bileşenine ait üstveriyi barındıran objedir. </param>
+            <param name="dosyaYolu">    Ek bileşenine ilişkin dosya yoludur. </param>
+            <param name="ozetModu">     Eklenen ek bileşenine ait özet değerinin paket özeti bileşenine
+                                        hangi algoritma ile ekleneceğini belirtir. </param>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi null ise EXCEPTION oluşur. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi mime türü null ise EXCEPTION
+                                                            oluşur. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi ID null ise EXCEPTION oluşur. </exception>
+            ### <exception cref="T:System.Exception">                PaketModu 'Ac' olarak işlem yapılan paketler
+                                                            için EkEkle fonksiyonu kullanılamaz. </exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.EkEkle(Cbddo.eYazisma.Xsd.CT_Ek,System.IO.Stream,System.String,Cbddo.eYazisma.Tipler.OzetModu)">
+            <summary>   Paket içerisine ek bileşeni ekler. </summary>
+            <exception cref="T:System.ArgumentNullException">    Dosya null olamaz. </exception>
+            <param name="ek">       Eklenen ek bileşenine ait üstveriyi barındıran objedir. </param>
+            <param name="dosya">    Ek bileşenine ilişkin STREAM'dir. </param>
+            <param name="dosyaAdi"> Eklenen ek bileşeni dosyasının adıdır. Dosya adında bulunan boşluklar kaldırılır ve Türkçe karakterler İngilizce olanlarla değiştirilir.</param>
+            <param name="ozetModu"> Eklenen ek bileşenine ait özet değerinin paket özeti bileşenine hangi
+                                    algoritma ile ekleneceğini belirtir. </param>
+            ### <exception cref="T:System.ArgumentNullException">    Dosya adı null ise EXCEPTION oluşur. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi null ise EXCEPTION oluşur. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi mime türü null ise EXCEPTION
+                                                            oluşur. </exception>
+            ### <exception cref="T:System.ArgumentNullException">    Ek objesi ID null ise EXCEPTION oluşur. </exception>
+            ### <exception cref="T:System.Exception">                PaketModu 'Ac' olarak işlem yapılan paketler
+                                                            için EkEkle fonksiyonu kullanılamaz. </exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.EkAl(System.Guid)">
+            <summary>Id'si verilen eke ait STREAM'i döner.</summary>
+            <param name="id">Alınmak istenen eke ait Id değeri.</param>
+            <returns>Alınan eke ait STREAM nesnesi. Ek bulunamaması durumunda null döner.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.EkCikar(System.Guid)">
+            <summary>Id'si verilen ek paketten çıkartılır.</summary>
+            <param name="id">Çıkartılmak istenen eke ait Id.</param>
+            <returns>Çıkarma işlemi başarılı ise true, aksi takdirde false döner.</returns>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+            <example> Mevcut bir paketten ek çıkartma örneği.
+            <code>
+            static void PakettenEkCikar(String dosyaYolu)
+            {
+                using (var paket = Paket.Ac(dosyaYolu, PaketModu.Guncelle))
+                {
+                    paket.EkCikar(new Guid(paket.Ustveri.EkleriAl().First().Id.Value));
+                    paket.Kapat();
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketAciklamasiBelirle(System.String)">
+            <summary>Paket açıklama değeri verilir.</summary>
+            <param name="aciklama">Verilen açıklama değeri.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: An explanation of the content of the resource. [Example: 
+            Values might include an abstract, table of contents, 
+            reference to a graphical representation of content, and a 
+            free-text account of the content. end example] </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketSonYazdirilmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket son yazdılırılma tarihi verilir.</summary>
+            <param name="sonYazdirilmaTarihi">Son yazdırılma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The date and time of the last printing. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketGuncellemeTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket güncelleme tarihi verilir.</summary>
+            <param name="guncellemeTarihi">Güncelleme tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date on which the resource was changed. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketSonGuncelleyenBelirle(System.String)">
+             <summary>Paket son güncelleyen bilgisi verilir.</summary>
+             <param name="sonGuncelleyen">Son güncelleyen bilgisi.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The user who performed the last modification. The 
+            identification is environment-specific. [Example: A name, 
+            email address, or employee ID. end example] It is 
+            recommended that this value be as concise as possible. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketAnahtarKelimeleriBelirle(System.String)">
+             <summary>Paket anahtar kelimeleri verilir.</summary>
+             <param name="anahtarKelimeler">Anahtar kelimeler.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: A delimited set of keywords to support searching and 
+            indexing. This is typically a list of terms that are not 
+            available elsewhere in the properties.  
+             
+            The definition of this element uniquely allows for: 
+              Use of the xml:lang attribute to identify languages 
+              A mixed content model, such that keywords can be 
+            flagged individually 
+            
+            [Example: The following instance of the keywords element 
+            has keywords in English (Canada), English (U.S.), and French 
+            (France): 
+             
+             <keywords xml:lang="en-US"> 
+             color  
+             <value xml:lang="en-CA">colour</value> 
+             <value xml:lang="fr-FR">couleur</value> 
+             </keywords> 
+            
+            end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketDurumuBelirle(System.String)">
+             <summary>Paket durumu verilir.</summary>
+             <param name="durum">Durum.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The status of the content. [Example: Values might include 
+            “Draft”, “Reviewed”, and “Final”.  end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketOlusturulmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket oluşturulma tarihi verilir.</summary>
+            <param name="olusturulmaTarihi">Oluşturulma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date of creation of the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketBasligiBelirle(System.String)">
+            <summary>Paket başlığı verilir.</summary>
+            <param name="baslik">Başlık.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The name given to the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketDiliBelirle(System.String)">
+            <summary>Paket dili verilir.</summary>
+            <param name="dil">Dil.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The language of the intellectual content of the resource. 
+            [Note: IETF RFC 3066 provides guidance on encoding to 
+            represent languages.  end note]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ImzaEkle(System.Byte[])">
+             <summary>Paket içerisine PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri eklenir.</summary>
+             <param name="imza">PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri.</param>
+             <exception cref="T:System.ArgumentNullException">İmza değeri null olduğunda oluşur.</exception>
+             <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+             <example> İmzasız bir paketi güncelleme modunda açarak imza ekleme örneği.
+             <code>
+            private static void ImzasizPaketeImzaEkle(string dosyaYolu, byte[] imza)
+            {
+                using (var paket = Paket.Ac(dosyaYolu, PaketModu.Guncelle))
+                {
+                     if (paket.PaketOzetiVarMi() == false)
+                     {
+                          paket.PaketOzetiOlustur();
+                     }
+            
+                     if (paket.ImzaVarMi() == false)
+                     {
+                          Stream paketOzeti = paket.PaketOzetiAl();
+                          Byte[] imzaliPaketOzeti = Imzala(StreamToByteArray(paketOzeti));
+                          paket.ImzaEkle(imzaliPaketOzeti);         // Zorunlu alan
+                     }
+                     else
+                     {
+                          Stream imza = paket.ImzaAl();
+                          Byte[] imzaliImza = Imzala(StreamToByteArray(imza));
+                          paket.ImzaEkle(imzaliImza);         // Zorunlu alan
+                     }
+                    paket.Kapat();
+                }
+            }
+             </code>
+             </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ImzaVarMi">
+            <summary>   Paket içerisindeki PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ImzaAl">
+            <summary>   Paket içerisindeki PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki PaketOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) STREAM nesnesi. Imzali bileşen olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafImzaEkle(System.Byte[])">
+            <summary>Paket içerisine PafarOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri eklenir.</summary>
+            <param name="imza">ParafOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri.</param>
+            <exception cref="T:System.ArgumentNullException">İmza değeri null olduğunda oluşur.</exception>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+            <example> İmzasız bir paketi güncelleme modunda açarak imza ekleme örneği.
+            <code>
+            private static void ImzasizPaketeParafImzaEkle(string dosyaYolu, byte[] imza)
+             {
+                 using (var paket = Paket.Ac(dosyaYolu, PaketModu.Guncelle))
+                 {
+                    if (paket.ParafOzetiVarMi() == false)
+                    {
+                         paket.ParafOzetiOlustur();
+                    }
+                    
+                    if (paket.ParafImzaVarMi() == false)
+                    {
+                        Stream parafOzeti = paket.ParafOzetiAl();
+                        Byte[] imzaliParafOzeti = Imzala(StreamToByteArray(parafOzeti));
+                        paket.ParafImzaEkle(imzaliParafOzeti);         // Zorunlu alan
+                    }
+                    else
+                    {
+                        Stream parafImza = paket.ParafImzaAl();
+                        Byte[] imzaliParafImza = Imzala(StreamToByteArray(parafImza));
+                        paket.ParafImzaEkle(imzaliParafImza);         // Zorunlu alan
+                    }
+                    paket.Kapat();
+                 }
+             }
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafImzaAl">
+            <summary>   Paket içerisindeki ParafOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki ParafOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) STREAM nesnesi. Imzali bileşen olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafImzaVarMi">
+            <summary>   Paket içerisindeki ParafOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki ParafOzeti bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri olması durumunda true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafImzaCikar">
+            <summary>ParafImza bileşenini paketten çıkartır.</summary>
+            <returns>Çıkarma işlemi başarılı ise true, aksi takdirde false döner.</returns>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+            <example> Mevcut bir paketten ParafImza çıkartma örneği.
+            <code>
+            static void PakettenParafImzaCikar(String dosyaYolu)
+            {
+                using (var paket = Paket.Ac(dosyaYolu, PaketModu.Guncelle))
+                {
+                    paket.ParafImzaCikar();
+                    paket.Kapat();
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.MuhurEkle(System.Byte[])">
+            <summary>Paket içerisine NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri eklenir.</summary>
+            <param name="muhur">NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri.</param>
+            <exception cref="T:System.ArgumentNullException">Muhur değeri null olduğunda oluşur.</exception>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.MuhurVarMi">
+            <summary>   Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.MuhurAl">
+            <summary>   Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) değeri STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki NihaiOzet bileşeninin imzalı (Ayrık olmayan CAdES-X-L) STREAM nesnesi. Mühürlü bileşen olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketOzetiVarMi">
+            <summary>   Paket içerisindeki PaketOzeti bileşeni bulunup bulunmadığını döner. </summary>
+            <returns>   Paket içerisindeki PaketOzeti bileşeni varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketOzetiAl">
+            <summary>   Paket içerisindeki PaketOzeti bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki PaketOzeti bileşeninin STREAM nesnesi. PaketOzeti bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.PaketOzetiDogrula(Cbddo.eYazisma.Xsd.CT_PaketOzeti,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@,Cbddo.eYazisma.Xsd.IdentifierType)">
+            <summary>
+            Verilen PaketOzeti nesnesindeki özet değerleri ile paket içerisindeki bileşenlerin özet değerlerini doğrular.
+            </summary>
+            <param name="ozet">Doğrulanacak PaketÖzeti nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.
+            2   Ustveri bileşeni yok.
+            3   PaketOzet'inde Ustveri ozet değeri yok.
+            4   BelgeHedef bileşeni yok.
+            5   PaketOzet'inde BelgeHedef ozet değeri yok.
+            6   UstYazi bileşeni yok.
+            7   PaketOzet'inde UstYazi ozet değeri yok.
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.
+            16  BelgeImza bileşeni yok.
+            17  Imza bileşeni yok.
+            18  Core bileşeni yok.
+            19  NihaiOzet'te Ustveri özet değeri yok.
+            20  NihaiOzet'te BelgeHedef özet değeri yok.
+            21  NihaiOzet'te UstYazi özet değeri yok.
+            22  NihaiOzet'te UstYazi özet değeri yok.
+            23  NihaiOzet'te UstYazi özet değeri yok.
+            24  NihaiOzet'te UstYazi özet değeri yok.
+            25  PaketOzeti bileşeni yok.
+            26  ParafOzet'inde UstYazi özet değeri yok.
+            27  ParafOzet'inde Ustveri özet değeri yok.
+            28  DigestItem değeri boş
+            29  DigestItem1 değeri boş
+            30  DigestItem ve DigestItem1 için kullanılan algoritmalar aynı.
+            31  DigestItem ve DigestItem1'den en az birinde SHA512 kullanılmalı.
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ReferansDogrula(Cbddo.eYazisma.Xsd.CT_Reference,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@,Cbddo.eYazisma.Xsd.IdentifierType)">
+            <summary>
+            Tek bir özet değeri ile paket içerisindeki ilgili bileşenin özet değerlerini doğrular.
+            </summary>
+            <param name="item">Doğrulanacak ÖzetDeğerini barındıran CT_Reference  nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.
+            2   Ustveri bileşeni yok.
+            3   PaketOzet'inde Ustveri ozet değeri yok.
+            4   BelgeHedef bileşeni yok.
+            5   PaketOzet'inde BelgeHedef ozet değeri yok.
+            6   UstYazi bileşeni yok.
+            7   PaketOzet'inde UstYazi ozet değeri yok.
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.
+            16  BelgeImza bileşeni yok.
+            17  Imza bileşeni yok.
+            18  Core bileşeni yok.
+            19  NihaiOzet'te Ustveri özet değeri yok.
+            20  NihaiOzet'te BelgeHedef özet değeri yok.
+            21  NihaiOzet'te UstYazi özet değeri yok.
+            22  NihaiOzet'te UstYazi özet değeri yok.
+            23  NihaiOzet'te UstYazi özet değeri yok.
+            24  NihaiOzet'te UstYazi özet değeri yok.
+            25  PaketOzeti bileşeni yok.
+            26  ParafOzet'inde UstYazi özet değeri yok.
+            27  ParafOzet'inde Ustveri özet değeri yok.
+            28  DigestItem değeri boş
+            29  DigestItem1 değeri boş
+            30  DigestItem ve DigestItem1 için kullanılan algoritmalar aynı.
+            31  DigestItem ve DigestItem1'den en az birinde SHA512 kullanılmalı.
+            </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafOzetiAl">
+            <summary>   Paket içerisindeki ParafOzeti bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki ParafOzeti bileşeninin STREAM nesnesi. ParafOzeti bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafOzetiVarMi">
+            <summary>   Paket içerisinde ParafOzeti olup olmadığını döner. </summary>
+            <returns>   Paket içerisinde ParafOzeti varsa true, yoksa false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.ParafOzetiDogrula(Cbddo.eYazisma.Xsd.CT_ParafOzeti,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@,Cbddo.eYazisma.Xsd.IdentifierType)">
+            <summary>
+            Verilen ParafOzeti nesnesindeki özet değerleri ile paket içerisindeki bileşenlerin özet değerlerini doğrular.
+            </summary>
+            <param name="ozet">Doğrulanacak ParafÖzeti nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.
+            2   Ustveri bileşeni yok.
+            3   ParafOzet'inde Ustveri ozet değeri yok.
+            4   BelgeHedef bileşeni yok.
+            5   ParafOzet'inde BelgeHedef ozet değeri yok.
+            6   UstYazi bileşeni yok.
+            7   ParafOzet'inde UstYazi ozet değeri yok.
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiOzetVarMi">
+            <summary>   Paket içerisindeki NihaiOzet bileşeni olup olmadığını döner. </summary>
+            <returns>   Paket içerisindeki NihaiOzet bileşen varsa true aksi durumda false döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiOzetAl">
+            <summary>   Paket içerisindeki NihaiOzet bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki NihaiOzet bileşeninin STREAM nesnesi. NihaiOzet bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.NihaiOzetDogrula(Cbddo.eYazisma.Xsd.CT_NihaiOzet,System.Collections.Generic.List{Cbddo.eYazisma.Tipler.OzetDogrulamaHatasi}@,Cbddo.eYazisma.Xsd.IdentifierType)">
+            <summary>
+            Verilen NihaiOzet nesnesindeki özet değerleri ile paket içerisindeki bileşenlerin özet değerlerini doğrular.
+            </summary>
+            <param name="ozet">Doğrulanacak NihaiOzet nesnesi.</param>
+            <param name="sonuclar">Doğrulanamayan bileşenler için açıklamaları barındırır.</param>
+            <returns>Bileşen doğrulandığında true, aksi halde false döner.
+            Hata Kodu Açıklamaları:
+            1   Ozet değeri verilmemiş.
+            2   Ustveri bileşeni yok.
+            4   BelgeHedef bileşeni yok.
+            6   UstYazi bileşeni yok.
+            8   Reference değeri verilmemiş.
+            9   URI değeri boş
+            10  DigestMethod değeri boş.
+            11  Algorithm değeri boş.
+            12  Desteklenmeyen OzetModu.
+            13  Paket bileşeni alınamadı.
+            14  Paket bileşenine ait hash hesaplanamadı.
+            15  Hashler eşit değil.
+            16  BelgeImza bileşeni yok.
+            17  Imza bileşeni yok.
+            18  Core bileşeni yok.
+            19  NihaiOzet'te Ustveri ozet değeri yok.
+            20  NihaiOzet'te BelgeHedef ozet değeri yok.
+            21  NihaiOzet'te UstYazi ozet değeri yok.
+            22  NihaiOzet'te UstYazi ozet değeri yok.
+            23  NihaiOzet'te UstYazi ozet değeri yok.
+            24  NihaiOzet'te UstYazi ozet değeri yok.
+            </returns>
+            <remarks> Java API için açıklama. .Net API kullanıyorsanız bu açıklamyı dikkate almayınız. 
+            Kullanılan Apache POI API'sı, 'core' bileşenine ulaşılmasına engel olduğundan dolayı, NihaiOzetDogrula metodu Core bileşeni özetini doğrulamaz. Bu nedenle NihaiÖzetDogrula metodundan sonra NihaiOzetCoreDogrula yardımcı metodu kullanılarak doğrulama işlemi tamamlanır. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Paket.Dispose">
+            <summary> Kullanılan kaynakları kapatır.</summary>
+            <remarks>Paket objesinin using bloğu ile kullanılması önerilir.</remarks>
+            <example><code>
+             using (var paket = Paket.Ac("63771493-DDC0-476D-98A4-E025C5D3B42B.eyp"), PaketModu.Guncelle))
+             {
+                paket.EkCikar(new Guid(paket.Ustveri.EkleriAl().First().Id.Value));
+                paket.Kapat();
+             }
+             </code>
+            </example>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.PaketModu">
+            <summary>
+            Paket açma işleminin modunu belirtir.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketModu.Olustur">
+            <summary>
+            Oluştur. Yeni bir paket oluşturma operasyonunu belirtir.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketModu.Ac">
+            <summary>
+            Aç. Paketin okuma için açıldığını belirtir.
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketModu.Guncelle">
+            <summary>
+            Güncelle. Paketin güncelleme için açıldığını belirtir.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.PaketOzeti">
+            <summary>
+            PaketOzeti bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.PaketOzeti.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.PaketOzeti.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.PaketOzeti.Ekle(Cbddo.eYazisma.Tipler.OzetModu,System.Byte[],System.Byte[],System.Uri,System.Boolean)">
+            <summary>
+            PaketOzeti bileşenine özet ekler.
+            </summary>
+            <param name="ozetModu">Eklenen özetin hangi algoritma ile alındığı bilgisi.</param>
+            <param name="ozetDegeri">Eklenecek özet değeri.</param>
+            <param name="uri">Eklenen özet değerine ilişkin bileşenin paket içindeki URI'si.</param>
+            <param name="hariciBilesenMi">Eklenen özet değerine ilişkin bileşenin paket dışında bir bileşen olması durumunda kullanılır.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.PaketOzeti.OzetleriAl">
+            <summary>
+            PaketOzeti bileşenindeki özetleri döner.
+            </summary>
+            <returns>Sıralı <see cref="T:Cbddo.eYazisma.Xsd.CT_Reference"/> nesnesi.</returns>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.PaketTipi">
+            <summary>
+            e-Yazışma API'si ile oluşturulabilecek paketlerin tipleri
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketTipi.NormalPaket">
+            <summary>
+            Normal e-Yazışma Paketi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketTipi.SifreliPaket">
+            <summary>
+            Şifreli e-Yazışma Paketi
+            </summary>
+        </member>
+        <member name="F:Cbddo.eYazisma.Tipler.PaketTipi.GuncellemePaketi">
+            <summary>
+            Güncelleme Paketi
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.ParafOzeti">
+            <summary>
+            ParafOzeti bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.ParafOzeti.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.ParafOzeti.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.ParafOzeti.Ekle(Cbddo.eYazisma.Tipler.OzetModu,System.Byte[],System.Byte[],System.Uri,System.Boolean)">
+            <summary>
+            ParafOzeti bileşenine özet ekler.
+            </summary>
+            <param name="ozetModu">Eklenen özetin hangi algoritma ile alındığı bilgisi.</param>
+            <param name="ozetDegeri">Eklenecek özet değeri.</param>
+            <param name="uri">Eklenen özet değerine ilişkin bileşenin paket içindeki URI'si.</param>
+            <param name="hariciBilesenMi">Eklenen özet değerine ilişkin bileşenin paket dışında bir bileşen olması durumunda kullanılır.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.ParafOzeti.OzetleriAl">
+            <summary>
+            ParafOzeti bileşenindeki özetleri döner.
+            </summary>
+            <returns>Sıralı <see cref="T:Cbddo.eYazisma.Xsd.CT_Reference"/> nesnesi.</returns>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.SifreliIcerikBilgisi">
+            <summary>
+            Şifreli paket içerisindeki şifreli veriyi tanımlar.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliIcerikBilgisi.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliIcerikBilgisi.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.SifreliPaket">
+            <summary>
+                e-Yazışma paketini tanımlar. Paket oluşturma ve açma işlemleri bu sınıf ile yapılır.
+            </summary>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.SifreliPaket.BelgeHedef">
+            <summary>Paketin iletileceği hedefleri barındıran objeye ulaşılır. </summary>
+            <value> BelgeHedef nesnesi.</value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.SifreliPaket.SifreliIcerikBilgisi">
+            <summary>Paketin içerisindeki şifreli içeriğe ilişkin bilgileri içeren nesneye ulaşılır.</summary>
+            <value> SifreliIcerikBilgisi nesnesi.</value>
+        </member>
+        <member name="P:Cbddo.eYazisma.Tipler.SifreliPaket.NihaiOzet">
+            <summary>Paket içerisinde imzalanan bileşenlere ait özet bilgilerinin bulunduğu objeye ulaşılır.</summary>
+            <value> NihaiOzet nesnesi. </value>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.#ctor">
+            <summary>
+            Contructor.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.Ac(System.IO.Stream,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.</summary>
+            <exception cref="T:System.Exception">    Güncelleme veya açma modunda e-Yazışma standartlarına uygun bir paket olmaması durumunda EXCEPTION oluşur.</exception>
+            <param name="stream">       Pakete ilişkin STREAM objesidir. </param>
+            <param name="paketModu">    Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir. </param>
+            <returns>  İşlem yapılan paket objesi. </returns>
+            <example>  Şifreli bir paket oluşturma örneği.
+            <code>
+            static void SifreliPaketOlustur(string olusturulacakPaketDosyasiYolu, string sifrelenecekIcPaketDosyaYolu)
+            {
+                using (SifreliPaket sifreliPaket = SifreliPaket.Ac(olusturulacakPaketDosyasiYolu, PaketModu.Olustur))
+                {
+                    using (Paket paket = Paket.Ac(sifrelenecekIcPaketDosyaYolu, PaketModu.Ac))
+                    {
+                        sifreliPaket.NihaiOzetEkle(paket.NihaiOzetAl());
+                        sifreliPaket.BelgeHedefEkle(paket.BelgeHedefiAl());
+                        paket.Kapat();
+                    }
+                    String tempfile = System.IO.Path.GetTempFileName();
+                    System.IO.File.WriteAllBytes(tempfile, PaketSifrele(sifrelenecekIcPaketDosyaYolu));
+                    using (Stream s = File.OpenRead(tempfile))
+                    {
+                        sifreliPaket.SifreliIcerikEkle(s, Guid.NewGuid());
+                    }
+                    sifreliPaket.SifreliIcerikBilgisiOlustur();
+                    sifreliPaket.Kapat(Guid.NewGuid(), null, null);
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.Ac(System.String,Cbddo.eYazisma.Tipler.PaketModu)">
+            <summary>Yeni bir paket oluşturmak, var olan bir paketi açmak veya güncellemek için kullanılır.</summary>
+            <param name="dosyaYolu">Pakete ilişkin dosya yoludur. </param>
+            <param name="paketModu">Paketin açılma, oluşturma veya güncelleme amacıyla açıldığını belirtir. </param>
+            <returns>   İşlem yapılan paket objesi. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.Kapat(System.Guid,Cbddo.eYazisma.Xsd.CT_Olusturan,System.String)">
+            <summary>İşlem yapılan paket için sonladırma işlemi yapılarak açılan kaynaklar kapatılır.</summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketAciklamasiBelirle(System.String)">
+            <summary>Paket açıklama değeri verilir.</summary>
+            <param name="aciklama">Verilen açıklama değeri.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: An explanation of the content of the resource. [Example: 
+            Values might include an abstract, table of contents, 
+            reference to a graphical representation of content, and a 
+            free-text account of the content. end example] </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketSonYazdirilmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket son yazdılırılma tarihi verilir.</summary>
+            <param name="sonYazdirilmaTarihi">Son yazdırılma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The date and time of the last printing. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketGuncellemeTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket güncelleme tarihi verilir.</summary>
+            <param name="guncellemeTarihi">Güncelleme tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date on which the resource was changed. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketSonGuncelleyenBelirle(System.String)">
+             <summary>Paket son güncelleyen bilgisi verilir.</summary>
+             <param name="sonGuncelleyen">Son güncelleyen bilgisi.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The user who performed the last modification. The 
+            identification is environment-specific. [Example: A name, 
+            email address, or employee ID. end example] It is 
+            recommended that this value be as concise as possible. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketAnahtarKelimeleriBelirle(System.String)">
+             <summary>Paket anahtar kelimeleri verilir.</summary>
+             <param name="anahtarKelimeler">Anahtar kelimeler.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: A delimited set of keywords to support searching and 
+            indexing. This is typically a list of terms that are not 
+            available elsewhere in the properties.  
+             
+            The definition of this element uniquely allows for: 
+              Use of the xml:lang attribute to identify languages 
+              A mixed content model, such that keywords can be 
+            flagged individually 
+            
+            [Example: The following instance of the keywords element 
+            has keywords in English (Canada), English (U.S.), and French 
+            (France): 
+             
+             <keywords xml:lang="en-US"> 
+             color  
+             <value xml:lang="en-CA">colour</value> 
+             <value xml:lang="fr-FR">couleur</value> 
+             </keywords> 
+            
+            end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketDurumuBelirle(System.String)">
+             <summary>Paket durumu verilir.</summary>
+             <param name="durum">Durum.</param>
+             <remarks>ISO/IEC 29500 Açıklaması: The status of the content. [Example: Values might include 
+            “Draft”, “Reviewed”, and “Final”.  end example]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketOlusturulmaTarihiBelirle(System.Nullable{System.DateTime})">
+            <summary>Paket oluşturulma tarihi verilir.</summary>
+            <param name="olusturulmaTarihi">Oluşturulma tarihi.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: Date of creation of the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketBasligiBelirle(System.String)">
+            <summary>Paket başlığı verilir.</summary>
+            <param name="baslik">Başlık.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The name given to the resource. </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.PaketDiliBelirle(System.String)">
+            <summary>Paket dili verilir.</summary>
+            <param name="dil">Dil.</param>
+            <remarks>ISO/IEC 29500 Açıklaması: The language of the intellectual content of the resource. 
+            [Note: IETF RFC 3066 provides guidance on encoding to 
+            represent languages.  end note]  </remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.NihaiOzetAl">
+            <summary>   Paket içerisindeki NihaiOzet bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki NihaiOzet bileşeninin STREAM nesnesi. NihaiOzet bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.NihaiOzetEkle(System.IO.Stream)">
+            <summary>
+            Mevcut bir NihaiOzet bileşenini pakete ekler.
+            </summary>
+            <param name="NihaiOzet">NihaiOzet bileşenini barındıran STREAM nesnesi.</param>
+            
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.BelgeHedefiAl">
+            <summary>   Paket içerisindeki BelgeHedef bileşenini STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki BelgeHedef bileşeninin STREAM nesnesi. BelgeHedef bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.BelgeHedefOlustur">
+            <summary>BelgeHedef bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <remarks>BelgeHedef bileşeninin varsayılan OzetModu ile özet değeri hesaplanarak PaketOzeti ve NihaiOzet objesine eklenir. Oluşturma sırasında BelgeHedef bileşeni olası hatalara karşı kontrol edilir.</remarks>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.SifreliIcerikBilgisiOlustur">
+            <summary>SifreliIcerikBilgisi bileşeninin 'serialize' edilerek paket içerisine eklenmesini sağlar.</summary>
+            <exception cref="T:System.ApplicationException">PaketModu "Ac" olarak kullanıldığında oluşur.</exception>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.SifreliIcerikEkle(System.IO.Stream,System.Guid)">
+            <summary>
+            Mevcut bir paketi SifreliIcerik olarak pakete ekler.
+            </summary>
+            <param name="sifreliIcerik">Paketi barındıran STREAM nesnesi.</param>
+            <param name="paketId">Eklenen paketin ID'si.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.SifreliIcerikAl">
+            <summary>   Paket içerisindeki SifreliIcerik STREAM olarak döner. </summary>
+            <returns>   Paket içerisindeki SifreliIcerik STREAM nesnesi. SifreliIcerik bileşeni olmaması durumunda null döner. </returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.SifreliIcerikDosyasiAdiAl">
+            <summary>Paketteki şifreli dosyanın adını döner.</summary>
+            <returns>Paketteki şifreli dosyanın adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.SifreliPaket.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.Ustveri">
+            <summary>
+            Ustveri bileşeni bilgileri.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.Dispose">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.Dispose(System.Boolean)">
+            <summary>
+            Kullanılan kaynakları kapatır.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.KonuBelirle(Cbddo.eYazisma.Xsd.TextType)">
+            <summary>
+            Belgenin konusunu belirler.
+            </summary>
+            <param name="konu">Belge konusu.</param>
+            <example><code>paket.Ustveri.KonuBelirle("e-Yazışma Test Dokümanı");</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.KonuAl">
+            <summary>
+            Belge konusunu döner.
+            </summary>
+            <returns>Belge konusu.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.BelgeIdBelirle(System.Guid)">
+            <summary>
+            Belge tekil anahtarını belirler.
+            </summary>
+            <param name="belgeId">Tekil anahtar değeri.</param>
+            <example><code>paket.Ustveri.BelgeIdBelirle(Guid.NewGuid());</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.BelgeIdAl">
+            <summary>
+            Belge tekil anahtar değerini döner.
+            </summary>
+            <returns>Belge tekil anahtar değeri.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.MimeTuruBelirle(System.String)">
+            <summary>
+            Belge mime türünü belirler.
+            </summary>
+            <param name="mimeTuru">Mime türü.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.MimeTuruAl">
+            <summary>
+            Belge mime türünü döner.
+            </summary>
+            <returns>Mime türü.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.GuvenlikKoduBelirle(Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu)">
+            <summary>
+            Belge güvenlik kodunu belirler.
+            </summary>
+            <param name="guvenlikKodu">Güvenlik kodu.</param>
+            <example><code>paket.Ustveri.GuvenlikKoduBelirle(ST_KodGuvenlikKodu.HZO);</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.GuvenlikKoduAl">
+            <summary>
+            Belge güvenlik kodunu döner.
+            </summary>
+            <returns>Güvenlik kodu.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.GuvenlikGecerlilikTarihiBelirle(System.DateTime)">
+            <summary>
+            Belge güvenlik kodu geçerlilik tarihini belirler.
+            </summary>
+            <param name="gecerlilikTarihi">Güvenlik kodu geçerlilik tarihi.</param>
+            <example><code>var islemTarihi = DateTime.Now;
+            paket.Ustveri.GuvenlikGecerlilikTarihiBelirle(islemTarihi.AddYears(5));</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.GuvenlikGecerlilikTarihiAl">
+            <summary>
+            Belge güvenlik kodu geçerlilik tarihini döner.
+            </summary>
+            <returns>Güvenlik kodu geçerlilik tarihi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OzIdBelirle(System.String,System.String)">
+            <summary>
+            Belge öz tekil anahtar değerini belirler.
+            </summary>
+            <param name="ozId">Belgenin oluşturulduğu sistemdeki tekil anahtar değeri.</param>
+            <param name="schemeId">Belgenin oluşturulduğu sistemdeki tekil anahtar değerinin şeması veya türü.</param>
+            <remarks>Belgenin oluşturulduğu veya saklandığı sistemde, belge için belirlenmiş ID değeridir.</remarks>
+            <example><code>paket.Ustveri.OzIdBelirle("6A690BBB-6680-43FA-A8B9-FA820A344CB9", "GUID");
+            paket.Ustveri.OzIdBelirle("736723", "INT");</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OzIdAl">
+            <summary>
+            Belge öz tekil anahtar değerini döner.
+            </summary>
+            <returns>Öz tekil anahtar değeri</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DilBelirle(System.String)">
+            <summary>
+            Belge dilini belirler.
+            </summary>
+            <param name="dil">Belgenin dili.</param>
+            <example><code>Ustveri.DilBelirle("tur");</code></example>
+            <remarks>ISO 639-3 standartına uygun dil kodu verilmelidir.</remarks>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DilAl">
+            <summary>
+            Belge dilini döner.
+            </summary>
+            <returns>Belgenin dili.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OlusturanBelirle(Cbddo.eYazisma.Xsd.CT_KurumKurulus)">
+            <summary>
+            Belge oluşturanını belirler.
+            </summary>
+            <param name="kurumKurulus">Oluşturan kurum/kuruluş.</param>
+            <example><code>
+            var olusturan = new CT_KurumKurulus()
+            {
+                KKK = "23ED5E7A75E0D1",
+                Adi = new NameType()
+                {
+                    Value = "Kalkınma Bakanlığı"
+                },
+                IletisimBilgisi = new CT_IletisimBilgisi()
+                {
+                    Ulke = new NameType() { Value = "Türkiye" },
+                    Il = new NameType() { Value = "Ankara" },
+                }
+            };
+            paket.Ustveri.OlusturanBelirle(olusturan);</code></example> 
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OlusturanBelirle(Cbddo.eYazisma.Xsd.CT_TuzelSahis)">
+            <summary>
+            Belge oluşturanını belirler.
+            </summary>
+            <param name="tuzelSahis">Oluşturan tüzel şahıs.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OlusturanBelirle(Cbddo.eYazisma.Xsd.CT_GercekSahis)">
+            <summary>
+            Belge oluşturanını belirler.
+            </summary>
+            <param name="gercekSahis">Oluşturan gerçek şahıs.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.OlusturanAl">
+            <summary>
+            Belge oluşturan bilgisini döner.
+            </summary>
+            <returns>Oluşturan.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.EkEkle(Cbddo.eYazisma.Xsd.CT_Ek)">
+            <summary>
+            Belge üstverisine ek ekler.
+            </summary>
+            <param name="ek">Ek nesnesi.</param>
+            <example><code>
+            var ek1 = new CT_Ek()
+               {
+                   Id = new CT_Id() { Value = Guid.NewGuid().ToString() },
+                   BelgeNo = "B.06.0.000.0.00.00.00-320/5128",
+                   Ad = new TextType() { Value = "Paket Standartları Analiz Raporu" },
+                   DosyaAdi = "Analiz Raporu şŞiİğĞüÜöÖçÇıI.pdf",
+                   MimeTuru = "application/pdf",
+                   SiraNo = 1,
+                   SiraNoSpecified = true,
+                   Tur = ST_KodEkTuru.DED
+               };
+               paket.Ustveri.EkEkle(ek1);</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.EkleriAl">
+            <summary>
+            Belge eklerini döner.
+            </summary>
+            <returns>Ek listesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgiEkle(Cbddo.eYazisma.Xsd.CT_Ilgi)">
+            <summary>
+            Bele üstverisine ilgi ekler.
+            </summary>
+            <param name="ilgi">İlgi nesnesi.</param>
+            <example><code>
+             var ilgi1 = new CT_Ilgi()
+              {
+                  Id = new CT_Id() { Value = Guid.NewGuid().ToString() },
+                  BelgeNo = "B.06.0.000.0.00.00.00-110/132",
+                  Etiket = "a",
+                  Tarih = new DateTime(2009, 10, 2),
+                  TarihSpecified = true,
+                  Aciklama = new TextType() { Value = "" },
+                  EkId = ek1.Id.Value
+              };
+              paket.Ustveri.IlgiEkle(ilgi1);</code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgileriAl">
+            <summary>
+            Belge ilgilerini döner.
+            </summary>
+            <returns>İlgi listesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DagitimEkle(Cbddo.eYazisma.Xsd.CT_Dagitim)">
+            <summary>
+            Belge üstverisine dağıtım ekler.
+            </summary>
+            <param name="dagitim">Dağıtım nesnesi.</param>
+            <example><code>
+            var dagitim1 = new CT_Dagitim()
+              {
+                  Item = new CT_KurumKurulus()
+                  {
+                      KKK = "23ED5E763584E6",
+                      Adi = new NameType()
+                      {
+                          Value = "Cumhurbaşkanlığı"
+                      },
+                      IletisimBilgisi = new CT_IletisimBilgisi()
+                      {
+                          Ulke = new NameType() { Value = "Türkiye" },
+                          Il = new NameType() { Value = "Ankara" },
+                      }
+                  },
+                  DagitimTuru = ST_KodDagitimTuru.GRG,
+                  Ivedilik = ST_KodIvedilik.ACL
+              };
+              paket.Ustveri.DagitimEkle(dagitim1);</code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DagitimlariAl">
+            <summary>
+            Belge dağıtımlarını alır.
+            </summary>
+            <returns>Dağıtım listesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgiliEkle(Cbddo.eYazisma.Xsd.CT_KurumKurulus)">
+            <summary>
+            Belge üstverisine ilgili ekler.
+            </summary>
+            <param name="kurumKurulus">İlgili kurum kuruluş.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgiliEkle(Cbddo.eYazisma.Xsd.CT_TuzelSahis)">
+            <summary>
+            Belge üstverisine ilgili ekler.
+            </summary>
+            <param name="tuzelSahis">İlgili tüzel şahıs.</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgiliEkle(Cbddo.eYazisma.Xsd.CT_GercekSahis)">
+            <summary>
+            Belge üstverisine ilgili ekler.
+            </summary>
+            <param name="gercekSahis">İlgili gerçek şahıs.</param>
+            <example>
+            <code>
+            var ilgili = new CT_GercekSahis()
+              {
+                  Kisi = new CT_Kisi()
+                  {
+                      OnEk = new TextType() { Value = "Sayın" },
+                      IlkAdi = new NameType() { Value = "Mehmet" },
+                      Soyadi = new NameType() { Value = "Güngör" }
+                  },
+                  Gorev = new TextType() { Value = "" },
+                  TCKN = "98765432109",
+                  IletisimBilgisi = new CT_IletisimBilgisi()
+                  {
+                      Telefon = "3122909292-1434",
+                      EPosta = "mehmetg@mfa.gov.tr",
+                      WebAdresi = "",
+                      Faks = "3122909293"
+                  }
+              };
+              paket.Ustveri.IlgiliEkle(ilgili);
+              </code>
+            </example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.IlgilileriAl">
+            <summary>
+            Belge üstverisine ilgili ekler.
+            </summary>
+            <returns>İlgili listesi.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DogrulamaBilgisiEkle(Cbddo.eYazisma.Xsd.CT_DogrulamaBilgisi)">
+            <summary>
+            Belge üstverisine belge doğrulama bilgilerini ekler
+            </summary>
+            <example>
+            <code>
+            var dogrulamaBilgisi = new CT_DogrulamaBilgisi
+            {
+                DogrulamaAdresi = "https://www.turkiye.gov.tr/belge-dogrulama"
+            }; 
+            </code>
+            </example>
+            <param name="dogrulamaBilgisi">Doğrulama adresi içeren doğrulama bilgisi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DogrulamaBilgisiAl">
+            <summary>
+            Belge üstverisinden doğrulama bilgilerini alır
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DosyaAdiBelirle(System.String)">
+            <summary>
+            Belgenin dosya sisteminde kullanılmak üzere adını belirler.
+            </summary>
+            <param name="dosyaAdi">Dosya adı.</param>
+            <example><code>Ustveri.DosyaAdiBelirle("Sunum.pdf");</code></example>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.DosyaAdiAl">
+            <summary>
+            Belgenin dosya sisteminde kullanılmak üzere adını döner.
+            </summary>
+            <returns>Dosya adı.</returns>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.Ustveri.KontrolEt">
+            <summary>
+            Üstverinin kurallara uygun olup olmadığını kontrol eder.
+            </summary>
+        </member>
+        <member name="T:Cbddo.eYazisma.Tipler.XsdAraclar">
+            <summary>
+            Xml nesneleri için gerekli yardımcı fonksiyonları içerir.
+            </summary>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Kisi)">
+            <summary>
+            Kisi nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="kisi">Kisi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_KurumKurulus)">
+            <summary>
+            CT_KurumKurulus nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="kurumKurulus">CT_KurumKurulus</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_TuzelSahis)">
+            <summary>
+            CT_TuzelSahis nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="tuzelSahis">CT_TuzelSahis</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_GercekSahis)">
+            <summary>
+            CT_GercekSahis nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="gercekSahis">CT_GercekSahis</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Ilgili)">
+            <summary>
+            CT_Ilgili nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="ilgili">CT_Ilgili</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_IlgiliListesi)">
+            <summary>
+            CT_IlgiliListesi nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="ilgiliListesi">CT_IlgiliListesi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_KonulmamisEk)">
+            <summary>
+            CT_KonulmamisEk nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="konulmamisEk">CT_KonulmamisEk</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_KonulmamisEkListesi)">
+            <summary>
+            CT_KonulmamisEkListesi nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="konulmamisEkListesi">CT_KonulmamisEkListesi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Dagitim)">
+            <summary>
+            CT_Dagitim nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="dagitim">CT_Dagitim</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Olusturan)">
+            <summary>
+            CT_Olusturan nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="olusturan">CT_Olusturan</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Imza)">
+            <summary>
+            CT_Imza nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="imza">CT_Imza</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Hedef)">
+            <summary>
+            CT_Hedef nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="hedef">CT_Hedef</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Ek)">
+            <summary>
+            CT_Ek nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="ek">CT_Ek</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Ozet)">
+            <summary>
+            CT_Ozet nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="ozet">CT_Ozet</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Ilgi)">
+            <summary>
+            CT_Ilgi nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="ilgi">CT_Ilgi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_HEYSK)">
+            <summary>
+            CT_HEYSK nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="heysk">CT_Ilgi</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_BelgeHedef)">
+            <summary>
+            CT_BelgeHedef nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="belgeHedef">CT_BelgeHedef</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_Reference)">
+            <summary>
+            CT_Reference nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="reference">CT_Reference</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_DigestItem)">
+            <summary>
+            CT_DigestItem nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="digestItem">CT_Reference</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_DigestMethod)">
+            <summary>
+            CT_DigestMethod nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="digetMethod">CT_DigestMethod</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_PaketOzeti)">
+            <summary>
+            CT_PaketOzeti nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="paketOzeti">CT_PaketOzeti</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_ParafOzeti)">
+            <summary>
+            CT_ParafOzeti nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="parafOzeti">CT_ParafOzeti</param>
+        </member>
+        <member name="M:Cbddo.eYazisma.Tipler.XsdAraclar.KontrolEt(Cbddo.eYazisma.Xsd.CT_NihaiOzet)">
+            <summary>
+            KCT_NihaiOzetisi nesnesininin kurallara uygun olmadığını kontrol eder.
+            </summary>
+            <param name="nihaiOzet">CT_NihaiOzet</param>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_ParafOzeti">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_ParafOzeti.Reference">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_ParafOzeti.Id">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Reference">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Reference.DigestItem">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Reference.DigestItem1">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Reference.Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Reference.URI">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Reference.Type">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_DigestItem">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DigestItem.DigestMethod">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DigestItem.DigestValue">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_DigestMethod">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DigestMethod.Any">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DigestMethod.Algorithm">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_BelgeHedef">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_BelgeHedef.HedefListesi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Hedef">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Hedef.Item">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_GercekSahis">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GercekSahis.Kisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GercekSahis.TCKN">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GercekSahis.Gorev">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GercekSahis.IletisimBilgisi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Kisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Kisi.IlkAdi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Kisi.Soyadi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Kisi.IkinciAdi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Kisi.Unvan">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Kisi.OnEk">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.NameType">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.NameType.languageID">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.NameType.Value">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.TextType">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.TextType.languageID">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.TextType.Value">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Telefon">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.TelefonDiger">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.EPosta">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.KepAdresi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Faks">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.WebAdresi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Adres">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Il">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Ilce">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IletisimBilgisi.Ulke">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_KurumKurulus">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KurumKurulus.KKK">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KurumKurulus.Adi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KurumKurulus.IletisimBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KurumKurulus.BirimKKK">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_TuzelSahis">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_TuzelSahis.Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_TuzelSahis.Adi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_TuzelSahis.IletisimBilgisi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.IdentifierType">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.IdentifierType.schemeID">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.IdentifierType.Value">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_NihaiOzet">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_NihaiOzet.Reference">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_NihaiOzet.Id">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_NihaiUstveri">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_NihaiUstveri.Tarih">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_NihaiUstveri.BelgeNo">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_NihaiUstveri.BelgeImzalar">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Imza">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.Imzalayan">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.YetkiDevreden">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.VekaletVeren">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.Makam">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.Amac">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.Aciklama">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.Tarih">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Imza.TarihSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ustveri">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.BelgeId">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.Konu">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.GuvenlikKodu">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.GuvenlikKoduGecerlilikTarihi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.GuvenlikKoduGecerlilikTarihiSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.MimeTuru">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.OzId">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.DagitimListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.Ekler">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.Ilgiler">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.Dil">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.Olusturan">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.IlgiliListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.DosyaAdi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.SdpBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.HeyskListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ustveri.DogrulamaBilgisi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu.YOK">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu.HZO">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu.OZL">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu.GZL">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodGuvenlikKodu.CGZ">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Dagitim">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Dagitim.Item">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Dagitim.Ivedilik">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Dagitim.DagitimTuru">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Dagitim.Miat">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Dagitim.KonulmamisEkListesi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.ST_KodIvedilik">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodIvedilik.NRM">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodIvedilik.ACL">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodIvedilik.GNL">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.ST_KodDagitimTuru">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodDagitimTuru.BLG">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodDagitimTuru.GRG">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_KonulmamisEk">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KonulmamisEk.EkId">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ek">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.BelgeNo">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Tur">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.DosyaAdi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.MimeTuru">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Ad">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.SiraNo">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Aciklama">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Referans">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.OzId">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.ImzaliMi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.ImzaliMiSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ek.Ozet">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Id.Value">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Id.EYazismaIdMi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Id.EYazismaIdMiSpecified">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.ST_KodEkTuru">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodEkTuru.DED">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodEkTuru.HRF">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_KodEkTuru.FZK">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ozet">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ozet.OzetAlgoritmasi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ozet.OzetDegeri">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_OzetAlgoritmasi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_OzetAlgoritmasi.Any">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_OzetAlgoritmasi.Algorithm">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ilgi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.BelgeNo">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.Tarih">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.TarihSpecified">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.Etiket">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.EkId">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.Ad">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.Aciklama">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgi.OzId">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Olusturan">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Olusturan.Item">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ilgili">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgili.Item">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_SDPBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SDPBilgisi.AnaSdp">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SDPBilgisi.DigerSdpler">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_SDP">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SDP.Kod">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SDP.Ad">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SDP.Aciklama">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_HEYSK">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_HEYSK.Kod">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_HEYSK.Ad">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_HEYSK.Tanim">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_DogrulamaBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DogrulamaBilgisi.DogrulamaAdresi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_PaketOzeti">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_PaketOzeti.Reference">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_PaketOzeti.Id">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_DagitimListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_DagitimListesi.Dagitim">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_HedefListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_HedefListesi.Hedef">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ekler">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ekler.Ek">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Ilgiler">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Ilgiler.Ilgi">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_ImzaListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_ImzaListesi.Imza">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_HEYSKListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_HEYSKListesi.Heysk">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_IlgiliListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_IlgiliListesi.Ilgili">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_KonulmamisEkListesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_KonulmamisEkListesi.KonulmamisEk">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_BelgeImza">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_BelgeImza.Imza">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_SifreliIcerikBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SifreliIcerikBilgisi.URI">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SifreliIcerikBilgisi.Id">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SifreliIcerikBilgisi.Version">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_SifreliIcerikBilgisi.Yontem">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.ST_GuncellemeTuru">
+            <remarks/>
+        </member>
+        <member name="F:Cbddo.eYazisma.Xsd.ST_GuncellemeTuru.GuvenlikKodu">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_GuncellemeBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuncellemeBilgisi.Guncellemeler">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_Guncelleme">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Guncelleme.GuncellemeTuru">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_Guncelleme.Item">
+            <remarks/>
+        </member>
+        <member name="T:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi.YeniGizlilikDerecesi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi.DegistirmeTarihi">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi.Aciklama">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi.KomisyonKarariBelgeNo">
+            <remarks/>
+        </member>
+        <member name="P:Cbddo.eYazisma.Xsd.CT_GuvenlikKoduDegisiklikBilgisi.KomisyonKarariBelgeId">
+            <remarks/>
+        </member>
+    </members>
+</doc>

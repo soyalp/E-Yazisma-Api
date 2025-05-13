@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:ParafOzeti-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:ParafOzeti-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:paketOzeti="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2"
+  version="1.0">
+
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2" schemaLocation="EY-PaketOzeti-2.xsd"/>
+  
+  <xsd:element name="ParafOzeti" type="CT_ParafOzeti"/>
+
+  <xsd:complexType name="CT_ParafOzeti">
+    <xsd:sequence>
+      <xsd:element ref="paketOzeti:Reference" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="Id" type="xsd:ID" use="optional"/>
+  </xsd:complexType>
+
+</xsd:schema>

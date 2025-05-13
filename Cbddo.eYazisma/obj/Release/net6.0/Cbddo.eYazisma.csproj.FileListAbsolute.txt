@@ -1,0 +1,12 @@
+C:\SPK\DotNet\Source\Cbddo.eYazisma\bin\Release\net6.0\Cbddo.eYazisma.deps.json
+C:\SPK\DotNet\Source\Cbddo.eYazisma\bin\Release\net6.0\Cbddo.eYazisma.dll
+C:\SPK\DotNet\Source\Cbddo.eYazisma\bin\Release\net6.0\Cbddo.eYazisma.pdb
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.csproj.AssemblyReference.cache
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.GeneratedMSBuildEditorConfig.editorconfig
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.AssemblyInfoInputs.cache
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.AssemblyInfo.cs
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.csproj.CoreCompileInputs.cache
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.dll
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\refint\Cbddo.eYazisma.dll
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\Cbddo.eYazisma.pdb
+C:\SPK\DotNet\Source\Cbddo.eYazisma\obj\Release\net6.0\ref\Cbddo.eYazisma.dll

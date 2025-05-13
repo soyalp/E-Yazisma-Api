@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UstVeri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:dpt:eyazisma:schema:xsd:Ustveri-2">
+  <BelgeId xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">4F9E2E9B-F4E6-4428-8F99-2E0A0D1D42D9</BelgeId>
+  <Konu xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">e-Yazışma Test Paketi</Konu>
+  <GuvenlikKodu xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">HZO</GuvenlikKodu>
+  <GuvenlikKoduGecerlilikTarihi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">2035-05-12T14:23:10.4145866+03:00</GuvenlikKoduGecerlilikTarihi>
+  <MimeTuru xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">application/pdf</MimeTuru>
+  <OzId schemeID="GUID" xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">8CEA7FF7-75F2-4CCF-B3C1-1B9B2054E8E9</OzId>
+  <DagitimListesi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <Dagitim>
+      <KurumKurulus>
+        <KKK>24301050</KKK>
+        <Adi>Adalet Bakanlığı</Adi>
+        <IletisimBilgisi>
+          <Telefon>0-312-2665555</Telefon>
+          <EPosta>info@adalet.gov.tr</EPosta>
+          <KepAdresi>adaletbakanligi@hs01.kep.tr</KepAdresi>
+          <Faks>0-312-2665556</Faks>
+          <WebAdresi>www.adalet.gov.tr</WebAdresi>
+          <Adres>Kızılay</Adres>
+          <Il>Ankara</Il>
+          <Ilce>Çankaya</Ilce>
+          <Ulke>Türkiye</Ulke>
+        </IletisimBilgisi>
+        <BirimKKK>24301051</BirimKKK>
+      </KurumKurulus>
+      <Ivedilik>ACL</Ivedilik>
+      <DagitimTuru>GRG</DagitimTuru>
+      <KonulmamisEkListesi>
+        <KonulmamisEk>
+          <EkId>396A3897-7A62-4F76-B10A-828E7946D0CD</EkId>
+        </KonulmamisEk>
+      </KonulmamisEkListesi>
+    </Dagitim>
+    <Dagitim>
+      <KurumKurulus>
+        <KKK>24322010</KKK>
+        <Adi>Sağlık Bakanlığı</Adi>
+      </KurumKurulus>
+      <Ivedilik>GNL</Ivedilik>
+      <DagitimTuru>BLG</DagitimTuru>
+      <Miat>P1D</Miat>
+    </Dagitim>
+  </DagitimListesi>
+  <Ekler xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <Ek>
+      <Id Value="48ECB045-06C5-43DA-BACE-50BA73A8D129" />
+      <BelgeNo>72131250-010.03-936</BelgeNo>
+      <Tur>DED</Tur>
+      <DosyaAdi>dosya1.pdf</DosyaAdi>
+      <MimeTuru>application/pdf</MimeTuru>
+      <Ad>Birinci ek</Ad>
+      <SiraNo>1</SiraNo>
+      <Aciklama>Birinci ek açıklaması</Aciklama>
+      <OzId schemeID="GUID">A14A4DCC-AE6A-4FD5-AAB3-8A33DC6125DD</OzId>
+      <ImzaliMi>true</ImzaliMi>
+    </Ek>
+    <Ek>
+      <Id Value="64B89C72-1A9B-45F0-B613-0C0D5EDAAE4E" />
+      <BelgeNo>35826416-020-987</BelgeNo>
+      <Tur>HRF</Tur>
+      <Ad>Harici referans</Ad>
+      <SiraNo>2</SiraNo>
+      <Aciklama>Hairici referans açıklaması</Aciklama>
+      <Referans>http://www.bilgitoplumu.gov.tr/Documents/1/Raporlar/Calisma_Raporu_2.pdf</Referans>
+      <OzId schemeID="GUID">0C9C4D34-D370-46C2-A996-0FADC0FA591F</OzId>
+      <ImzaliMi>false</ImzaliMi>
+      <Ozet>
+        <OzetAlgoritmasi Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <OzetDegeri>/InKUd7ATLR4PzUCBiWjyD38d9oxbWF72RR1QVSdFMo=</OzetDegeri>
+      </Ozet>
+    </Ek>
+    <Ek>
+      <Id Value="12E0130E-E785-467E-90BA-95ED9C930C6E" />
+      <BelgeNo>48154937-612.01.03-942</BelgeNo>
+      <Tur>FZK</Tur>
+      <Ad>Fiziksel ek</Ad>
+      <SiraNo>3</SiraNo>
+      <Aciklama>İki adet CD</Aciklama>
+      <OzId schemeID="GUID">45A778BA-B943-4B68-8504-71854DF0DDFF</OzId>
+      <ImzaliMi>false</ImzaliMi>
+    </Ek>
+    <Ek>
+      <Id Value="BB42DC69-7DE1-40E0-9997-4AEE7427D984" />
+      <BelgeNo>65410891-020-408</BelgeNo>
+      <Tur>DED</Tur>
+      <DosyaAdi>dosya_imzasiz.docm</DosyaAdi>
+      <MimeTuru>application/MSWord</MimeTuru>
+      <Ad>İmzasız ek</Ad>
+      <SiraNo>4</SiraNo>
+      <Aciklama>İmzasız ek açıklaması</Aciklama>
+      <OzId schemeID="GUID">76E16DDA-AB44-46DB-B615-42FBE7E9BEE3</OzId>
+      <ImzaliMi>false</ImzaliMi>
+    </Ek>
+    <Ek>
+      <Id Value="396A3897-7A62-4F76-B10A-828E7946D0CD" />
+      <BelgeNo>65410891-020-444</BelgeNo>
+      <Tur>DED</Tur>
+      <DosyaAdi>dosya3.docx</DosyaAdi>
+      <MimeTuru>application/vnd.openxmlformats-officedocument.wordprocessingml.document</MimeTuru>
+      <Ad>İkinci ek</Ad>
+      <SiraNo>5</SiraNo>
+      <Aciklama>İkinci ek açıklaması</Aciklama>
+      <OzId schemeID="GUID">D7D16B9C-7419-451B-82B0-34D334572464</OzId>
+      <ImzaliMi>true</ImzaliMi>
+    </Ek>
+  </Ekler>
+  <Ilgiler xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <Ilgi>
+      <Id Value="76C7FD89-40F5-4F0D-AB41-CDC215B39EB6" />
+      <BelgeNo>65410891-020-480</BelgeNo>
+      <Tarih>2009-11-05T00:00:00</Tarih>
+      <Etiket>a</Etiket>
+      <EkId>48ECB045-06C5-43DA-BACE-50BA73A8D129</EkId>
+      <Ad>İlgi (a) yazı</Ad>
+      <Aciklama>İlgi (a) yazının açıklaması</Aciklama>
+      <OzId schemeID="GUID">1C26C956-AE45-4DC1-BE86-1B8278A34904</OzId>
+    </Ilgi>
+    <Ilgi>
+      <Id Value="2A413385-F2DB-43D7-87D2-432D1BEFB247" />
+      <BelgeNo>48154937-612.01.03-945</BelgeNo>
+      <Tarih>2009-11-05T00:00:00</Tarih>
+      <Etiket>b</Etiket>
+      <Ad>İlgi (b) yazı</Ad>
+      <Aciklama>İlgi (b) yazının açıklaması</Aciklama>
+      <OzId schemeID="GUID">1C26C956-AE45-4DC1-BE86-1B8278A34904</OzId>
+    </Ilgi>
+  </Ilgiler>
+  <Dil xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">tur</Dil>
+  <Olusturan xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <KurumKurulus>
+      <KKK>82223362</KKK>
+      <Adi>Türkiye Cumhuriyeti Cumhurbaşkanlığı Dijital Dönüşüm Ofisi Başkanlığı</Adi>
+      <IletisimBilgisi>
+        <Telefon>0-312-4036400</Telefon>
+        <EPosta>dijitaliletisim@cbddo.gov.tr</EPosta>
+        <KepAdresi>cbddo@hs01.kep.tr</KepAdresi>
+        <Faks>0-312-4036500</Faks>
+        <WebAdresi>https://www.cbddo.gov.tr</WebAdresi>
+        <Adres>T.C. Cumhurbaşkanlığı Çankaya Yerleşkesi Ziaur Rahman Cad. 06550</Adres>
+        <Il>Ankara</Il>
+        <Ilce>Çankaya</Ilce>
+        <Ulke>Türkiye</Ulke>
+      </IletisimBilgisi>
+      <BirimKKK>12345678</BirimKKK>
+    </KurumKurulus>
+  </Olusturan>
+  <IlgiliListesi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <Ilgili>
+      <GercekSahis>
+        <Kisi>
+          <IlkAdi>Hüseyin</IlkAdi>
+          <Soyadi>Yetmez</Soyadi>
+          <OnEk>Uzman</OnEk>
+        </Kisi>
+        <TCKN>12345678903</TCKN>
+        <Gorev>Birim Sorumlusu</Gorev>
+        <IletisimBilgisi>
+          <Telefon>0-505-4821111</Telefon>
+          <TelefonDiger>0-312-2444444</TelefonDiger>
+        </IletisimBilgisi>
+      </GercekSahis>
+    </Ilgili>
+  </IlgiliListesi>
+  <DosyaAdi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">ustyazi.pdf</DosyaAdi>
+  <SdpBilgisi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <AnaSdp>
+      <Kod>010.06.01</Kod>
+      <Ad>İç Genelgeler</Ad>
+      <Aciklama />
+    </AnaSdp>
+    <DigerSdpler>
+      <SdpListesi>
+        <Kod>010.07.01</Kod>
+        <Ad>Duyurular</Ad>
+        <Aciklama />
+      </SdpListesi>
+      <SdpListesi>
+        <Kod>010.08</Kod>
+        <Ad>Rehber Kılavuz</Ad>
+        <Aciklama />
+      </SdpListesi>
+    </DigerSdpler>
+  </SdpBilgisi>
+  <HeyskListesi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <Heysk>
+      <Kod>999999</Kod>
+      <Ad>Ayrıntılı Harcama Programının Hazırlanması</Ad>
+      <Tanim>Ayrıntılı Harcama Programının Hazırlanması ve Maliye Bakanlığına Gönderilmesi</Tanim>
+    </Heysk>
+    <Heysk>
+      <Kod>111111</Kod>
+      <Ad>Yatırım Programlarının Hazırlanması</Ad>
+      <Tanim>Yatırım Programlarının Hazırlanıp Başbakanlığa Gönderilmesi</Tanim>
+    </Heysk>
+  </HeyskListesi>
+  <DogrulamaBilgisi xmlns="urn:dpt:eyazisma:schema:xsd:Tipler-2">
+    <DogrulamaAdresi>https://www.turkiye.gov.tr/belge-dogrulama</DogrulamaAdresi>
+  </DogrulamaBilgisi>
+</UstVeri>

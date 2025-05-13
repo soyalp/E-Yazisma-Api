@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  version="1.0">
+
+  <xsd:element name="PaketOzeti" type="CT_PaketOzeti"/>
+  <xsd:element name="Reference" type="CT_Reference"/>
+  <xsd:element name="DigestMethod" type="CT_DigestMethod"/>
+  <xsd:element name="DigestValue" type="ST_DigestValue"/>
+  <xsd:element name="DigestItem" type="CT_DigestItem"/>
+
+  <xsd:complexType name="CT_PaketOzeti">
+    <xsd:sequence>
+      <xsd:element ref="Reference" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="Id" type="xsd:ID" use="optional"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_Reference">
+    <xsd:sequence>
+      <xsd:element ref="DigestItem"></xsd:element>
+      <xsd:element ref="DigestItem"></xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="Id" type="xsd:ID" use="optional"/>
+    <xsd:attribute name="URI" type="xsd:anyURI" use="optional"/>
+    <xsd:attribute name="Type" type="xsd:anyURI" use="optional"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_DigestItem">
+    <xsd:sequence>
+      <xsd:element ref="DigestMethod"/>
+      <xsd:element ref="DigestValue"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="CT_DigestMethod" mixed="true">
+    <xsd:sequence>
+      <xsd:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="Algorithm" type="xsd:anyURI" use="required"/>
+  </xsd:complexType>
+
+  <xsd:simpleType name="ST_DigestValue">
+    <xsd:restriction base="xsd:base64Binary"/>
+  </xsd:simpleType>
+
+</xsd:schema>

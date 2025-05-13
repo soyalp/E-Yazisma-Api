@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:KodEkTuru-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:KodEkTuru-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+  version="1.0">
+  <xsd:simpleType name="ST_KodEkTuru">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="DED">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>DahiliElektronikDosya</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HRF">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>HariciReferans</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FZK">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Fiziksel</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

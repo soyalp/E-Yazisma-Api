@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:GuncellemeTuru-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:GuncellemeTuru-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+  version="1.0">
+  <xsd:simpleType name="ST_GuncellemeTuru">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="GuvenlikKodu">
+        <xsd:annotation>
+          <xsd:documentation>
+            <ccts:CodeName>Güvenlik Kodu Değişikliği</ccts:CodeName>
+            <ccts:CodeDescription></ccts:CodeDescription>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NihaiUstVeri xmlns:tipler="urn:dpt:eyazisma:schema:xsd:Tipler-2" xmlns="urn:dpt:eyazisma:schema:xsd:NihaiUstveri-2">
+  <tipler:Tarih>2025-05-12T14:23:13.3515207+03:00</tipler:Tarih>
+  <tipler:BelgeNo>1234</tipler:BelgeNo>
+  <tipler:BelgeImzalar>
+    <tipler:Imza>
+      <tipler:Imzalayan>
+        <tipler:Kisi>
+          <tipler:IlkAdi>Osman</tipler:IlkAdi>
+          <tipler:Soyadi>Yeşil</tipler:Soyadi>
+          <tipler:IkinciAdi>Murat</tipler:IkinciAdi>
+          <tipler:Unvan>Büyükelçi</tipler:Unvan>
+          <tipler:OnEk>Dr.</tipler:OnEk>
+        </tipler:Kisi>
+        <tipler:TCKN>12345678902</tipler:TCKN>
+        <tipler:Gorev>Daire Başkanı</tipler:Gorev>
+        <tipler:IletisimBilgisi>
+          <tipler:Telefon>0-312-2666666</tipler:Telefon>
+          <tipler:TelefonDiger>0-532-4828282</tipler:TelefonDiger>
+          <tipler:EPosta>om_yesil@xyz.com.tr</tipler:EPosta>
+          <tipler:Faks>0-312-2888888</tipler:Faks>
+          <tipler:WebAdresi>https://www.cbddo.gov.tr/</tipler:WebAdresi>
+          <tipler:Adres>T.C Cumhurbaşkanlığı Külliyesi 06560 Beştepe - Ankara</tipler:Adres>
+          <tipler:Il>Ankara</tipler:Il>
+          <tipler:Ilce>Çankaya</tipler:Ilce>
+          <tipler:Ulke>Türkiye</tipler:Ulke>
+        </tipler:IletisimBilgisi>
+      </tipler:Imzalayan>
+      <tipler:YetkiDevreden>
+        <tipler:Kisi>
+          <tipler:IlkAdi>Hasan</tipler:IlkAdi>
+          <tipler:Soyadi>Aydın</tipler:Soyadi>
+          <tipler:IkinciAdi>Şaban</tipler:IkinciAdi>
+          <tipler:Unvan>Genel Müdür</tipler:Unvan>
+          <tipler:OnEk>Uzman</tipler:OnEk>
+        </tipler:Kisi>
+        <tipler:TCKN>12345588901</tipler:TCKN>
+        <tipler:Gorev>Genel Müdür</tipler:Gorev>
+        <tipler:IletisimBilgisi>
+          <tipler:Telefon>0-312-2999999</tipler:Telefon>
+          <tipler:TelefonDiger>0-532-4827777</tipler:TelefonDiger>
+          <tipler:EPosta>iletisim@abc.com</tipler:EPosta>
+          <tipler:Faks>0-312-2946345</tipler:Faks>
+          <tipler:WebAdresi>www.tuik.gov.tr</tipler:WebAdresi>
+          <tipler:Adres>TUİK Necatibey Cad. No:112</tipler:Adres>
+          <tipler:Il>Ankara</tipler:Il>
+          <tipler:Ilce>Çankaya</tipler:Ilce>
+          <tipler:Ulke>Türkiye</tipler:Ulke>
+        </tipler:IletisimBilgisi>
+      </tipler:YetkiDevreden>
+      <tipler:VekaletVeren>
+        <tipler:Kisi>
+          <tipler:IlkAdi>Semih</tipler:IlkAdi>
+          <tipler:Soyadi>Yılmaz</tipler:Soyadi>
+          <tipler:Unvan>Dr.</tipler:Unvan>
+        </tipler:Kisi>
+        <tipler:Gorev>Müsteşar</tipler:Gorev>
+      </tipler:VekaletVeren>
+      <tipler:Makam>Müsteşar</tipler:Makam>
+      <tipler:Amac>Onay</tipler:Amac>
+      <tipler:Aciklama>İmzanın açıklaması</tipler:Aciklama>
+      <tipler:Tarih>2025-05-12T14:23:13.3532687+03:00</tipler:Tarih>
+    </tipler:Imza>
+    <tipler:Imza>
+      <tipler:Imzalayan>
+        <tipler:Kisi>
+          <tipler:IlkAdi>Metin</tipler:IlkAdi>
+          <tipler:Soyadi>Demir</tipler:Soyadi>
+          <tipler:OnEk>Dr.</tipler:OnEk>
+        </tipler:Kisi>
+        <tipler:TCKN>98787678902</tipler:TCKN>
+        <tipler:Gorev>Şube Müdürü</tipler:Gorev>
+      </tipler:Imzalayan>
+      <tipler:Makam>Daire</tipler:Makam>
+      <tipler:Amac>Onay</tipler:Amac>
+      <tipler:Aciklama>İmzanın açıklaması</tipler:Aciklama>
+      <tipler:Tarih>2025-05-12T14:23:13.35438+03:00</tipler:Tarih>
+    </tipler:Imza>
+  </tipler:BelgeImzalar>
+</NihaiUstVeri>

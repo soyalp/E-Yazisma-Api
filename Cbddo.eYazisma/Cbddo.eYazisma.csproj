@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AssemblyTitle>Cbddo.eYazisma</AssemblyTitle>
+    <Company>Türkiye Cumhuriyeti Cumhurbaşkanlığı Dijital Dönüşüm Ofisi</Company>
+    <Copyright>Copyright ©  2025</Copyright>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <FileVersion>2.1.0.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Xsd\EY-BelgeHedef-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-KodDagitimTuru-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-KodEkTuru-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-GuncellemeTuru-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-KodGuvenlik-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-KodIvedilik-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-NihaiUstveri-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-NihaiOzet-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-ParafOzeti-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-PaketOzeti-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-Tipler-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\EY-Ustveri-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\Reference\CodeList_CurrencyCode_ISO_7_04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\Reference\CodeList_LanguageCode_ISO_7_04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\Reference\CodeList_MIMEMediaTypeCode_IANA_7_04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\Reference\CodeList_UnitCode_UNECE_7_04.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Xsd\Reference\UnqualifiedDataTypeSchemaModule-2.0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.IO.Packaging" Version="9.0.4" />
+  </ItemGroup>
+</Project>

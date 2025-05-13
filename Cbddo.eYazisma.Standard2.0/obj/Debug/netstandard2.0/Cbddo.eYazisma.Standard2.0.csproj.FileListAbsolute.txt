@@ -1,0 +1,10 @@
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\bin\Debug\netstandard2.0\Cbddo.eYazisma.deps.json
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\bin\Debug\netstandard2.0\Cbddo.eYazisma.dll
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\bin\Debug\netstandard2.0\Cbddo.eYazisma.pdb
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.Standard2.0.csproj.AssemblyReference.cache
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.Standard2.0.GeneratedMSBuildEditorConfig.editorconfig
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.Standard2.0.AssemblyInfoInputs.cache
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.Standard2.0.AssemblyInfo.cs
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.Standard2.0.csproj.CoreCompileInputs.cache
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.dll
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma.Standard2.0\obj\Debug\netstandard2.0\Cbddo.eYazisma.pdb

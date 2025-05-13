@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="urn:dpt:eyazisma:schema:xsd:Ustveri-2"
+  targetNamespace="urn:dpt:eyazisma:schema:xsd:Ustveri-2"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified"
+  xmlns:tipler="urn:dpt:eyazisma:schema:xsd:Tipler-2"
+  version="1.0">
+
+  <xsd:import namespace="urn:dpt:eyazisma:schema:xsd:Tipler-2" schemaLocation="EY-Tipler-2.xsd"/>
+
+  <xsd:element name="UstVeri" type="CT_Ustveri"></xsd:element>
+  
+  <xsd:complexType name="CT_Ustveri">
+    <xsd:sequence>
+      <xsd:element ref="tipler:BelgeId" />
+      <xsd:element ref="tipler:Konu" />
+      <xsd:element ref="tipler:GuvenlikKodu" />
+      <xsd:element ref="tipler:GuvenlikKoduGecerlilikTarihi" minOccurs="0"></xsd:element>
+      <xsd:element ref="tipler:MimeTuru" />
+      <xsd:element ref="tipler:OzId" minOccurs="0" />
+      <xsd:element ref="tipler:DagitimListesi" />
+      <xsd:element ref="tipler:Ekler" minOccurs="0" />
+      <xsd:element ref="tipler:Ilgiler" minOccurs="0" />
+      <xsd:element ref="tipler:Dil" minOccurs="0" />
+      <xsd:element ref="tipler:Olusturan"></xsd:element>
+      <xsd:element ref="tipler:IlgiliListesi" minOccurs="0"></xsd:element>
+      <xsd:element ref="tipler:DosyaAdi"></xsd:element>
+      <xsd:element ref="tipler:SdpBilgisi" minOccurs="0"></xsd:element>
+      <xsd:element ref="tipler:HeyskListesi" minOccurs="0"></xsd:element>
+      <xsd:element ref="tipler:DogrulamaBilgisi"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

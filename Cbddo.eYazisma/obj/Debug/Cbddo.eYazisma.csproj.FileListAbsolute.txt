@@ -1,0 +1,7 @@
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\bin\Debug\Cbddo.eYazisma.xml
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\bin\Debug\Cbddo.eYazisma.dll
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\bin\Debug\Cbddo.eYazisma.pdb
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\obj\Debug\Cbddo.eYazisma.csproj.AssemblyReference.cache
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\obj\Debug\Cbddo.eYazisma.csproj.CoreCompileInputs.cache
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\obj\Debug\Cbddo.eYazisma.dll
+D:\works\eimza\DotNet-API_2.1testkod\DotNet\Source\Cbddo.eYazisma\obj\Debug\Cbddo.eYazisma.pdb

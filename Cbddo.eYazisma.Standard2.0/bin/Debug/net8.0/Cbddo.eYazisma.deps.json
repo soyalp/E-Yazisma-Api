@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Cbddo.eYazisma/1.0.0": {
+        "dependencies": {
+          "System.IO.Packaging": "9.0.4"
+        },
+        "runtime": {
+          "Cbddo.eYazisma.dll": {}
+        }
+      },
+      "System.IO.Packaging/9.0.4": {
+        "runtime": {
+          "lib/net8.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cbddo.eYazisma/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Packaging/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4E6xqW9T8zTgS1NoB3oYkeuNp75bKMK11YuArrkg52wygxcQjbcPB8Ryh9E5ohLu+ZRCqmsg7flE9F9fUeeyA==",
+      "path": "system.io.packaging/9.0.4",
+      "hashPath": "system.io.packaging.9.0.4.nupkg.sha512"
+    }
+  }
+}

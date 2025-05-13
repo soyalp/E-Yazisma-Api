@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParafOzeti xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="4F9E2E9B-F4E6-4428-8F99-2E0A0D1D42D9" xmlns="urn:dpt:eyazisma:schema:xsd:ParafOzeti-2">
+  <Reference URI="/Ustveri/Ustveri.xml" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>bTp2kf5nm69xub/TCyaeYSreChONB/KjW9ZqNo3Eeds++7jPzxKYr4yH9+3zoYxJ</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>xkUvQt67mZXqZHabBfzZN2fCPT3rdsGxI249ARxup20Qhv5hViS94Q08RCCoLaIZ7eCh+LcEpGgU2tjrLH3P9w==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/UstYazi/ustyazi.pdf" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>sphAg9+vItgkOSA3lDkTOqiVwgMbQvgdbyj1O+SXVk9AEoXAFxbNRNtvPav0nfmR</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>2ZUXY13iNvEdjmCxiHz7jZJOSVOEcuStp1G2mgwbSV3vgbFJC69qYxNGd6u2ME5CBjUSvf8x0xDKlJDzqzTbtA==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Ekler/dosya1.pdf" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>D3ewrkZ5wc8sGbH6XwB1UEMZcqJI9Z9SC5tLQOOTK/OoxY4tjTFkZZSDT9r0EHok</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>lRDJNjf2uq+7kIKoAqpsPRFn9M9qAsQyEx3jpvmNOc08rF8m17Ry6PwqUJMKThyono2eg5yB7yARmGeKrD30Wg==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Ekler/dosya3.docx" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>/F3O5tRJqX1cgbvTQHdL4bU5X6TuUGhf+C4jk8yb4KswsXLWTAjwmpBh2Pr2pFA8</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>SaVmE9F8MnrHa5T9hq7SMma652QOUNZ2Et0wSlt2PrujFB6OLOCEAMzvG5p+JQk30y7hZ8G54xZVO3XOsnSJKQ==</DigestValue>
+    </DigestItem>
+  </Reference>
+</ParafOzeti>

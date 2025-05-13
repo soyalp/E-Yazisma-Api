@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Cbddo.eYazisma</RootNamespace>
+    <AssemblyName>Cbddo.eYazisma</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Cbddo.eYazisma\Tipler\Araclar.cs" Link="Tipler\Araclar.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\BelgeHedef.cs" Link="Tipler\BelgeHedef.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\GuncellemeBilgisi.cs" Link="Tipler\GuncellemeBilgisi.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\GuncellemePaketi.cs" Link="Tipler\GuncellemePaketi.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\NihaiOzet.cs" Link="Tipler\NihaiOzet.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\NihaiUstveri.cs" Link="Tipler\NihaiUstveri.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\OzetDogrulamaHataKodu.cs" Link="Tipler\OzetDogrulamaHataKodu.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\OzetDogrulamaSonucu.cs" Link="Tipler\OzetDogrulamaSonucu.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\OzetModu.cs" Link="Tipler\OzetModu.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\Paket.cs" Link="Tipler\Paket.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\PaketModu.cs" Link="Tipler\PaketModu.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\PaketOzeti.cs" Link="Tipler\PaketOzeti.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\ParafOzeti.cs" Link="Tipler\ParafOzeti.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\PaketTipi.cs" Link="Tipler\PaketTipi.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\SifreliIcerikBilgisi.cs" Link="Tipler\SifreliIcerikBilgisi.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\SifreliPaket.cs" Link="Tipler\SifreliPaket.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Tipler\Ustveri.cs" Link="Tipler\Ustveri.cs" />
+    <Compile Include="..\Cbddo.eYazisma\Xsd.cs" Link="Xsd.cs" />
+    <Compile Include="..\Cbddo.eYazisma\XsdAraclar.cs" Link="XsdAraclar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO.Packaging" Version="9.0.4" />
+  </ItemGroup>
+</Project>

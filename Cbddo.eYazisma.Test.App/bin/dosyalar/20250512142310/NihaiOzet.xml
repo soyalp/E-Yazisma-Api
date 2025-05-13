@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NihaiOzet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="4F9E2E9B-F4E6-4428-8F99-2E0A0D1D42D9" xmlns="urn:dpt:eyazisma:schema:xsd:NihaiOzet-2">
+  <Reference URI="/Ustveri/Ustveri.xml" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>bTp2kf5nm69xub/TCyaeYSreChONB/KjW9ZqNo3Eeds++7jPzxKYr4yH9+3zoYxJ</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>xkUvQt67mZXqZHabBfzZN2fCPT3rdsGxI249ARxup20Qhv5hViS94Q08RCCoLaIZ7eCh+LcEpGgU2tjrLH3P9w==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/UstYazi/ustyazi.pdf" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>sphAg9+vItgkOSA3lDkTOqiVwgMbQvgdbyj1O+SXVk9AEoXAFxbNRNtvPav0nfmR</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>2ZUXY13iNvEdjmCxiHz7jZJOSVOEcuStp1G2mgwbSV3vgbFJC69qYxNGd6u2ME5CBjUSvf8x0xDKlJDzqzTbtA==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/ParafOzeti/ParafOzeti.xml" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>wsPKGLmxwzBu1ptuHPDHP3pH/ou83C7CzCwdVbJf/yExmTuhyhqw1CHhuA9KNJOO</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>iwAqWyjUdejYsZ49L+aUGKc+/QisD71hjOS2ekwawPW8kUU2YGFMCEDXFs2Z29Q1Dvw0ptmpsLctf9ecRBnrZA==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Paraflar/ParafImzaCades.imz" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>hiKdxtL/vqxzgHRBVKpwApHAZDUqDb3He57T8sjh2sTcMlhn053f8dJim3o5PUf2</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>J4ZMxSGalRp6blK4yN3faYHQmNoWWNliWMhwssiN+8tRhBrqFyoouvpqeXMRZVhGdwZgRclZ7Q+ZKWiNBN78KQ==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/PaketOzeti/PaketOzeti.xml" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>OShNWiTgDwltb7g/uYIy9ping4ZYWSBBiClmlmlW91teGbFZ49QeWGJxYB7hHXgt</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>XntZeSdFKFqW4v5v7Zk/z5FPe91TUl0EFdmvH3fLE0rlBTGrlY9Mj+b/2aHbbILSlI4hAbLesVLBbuoJkGJHkw==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Imzalar/ImzaCades.imz" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>hiKdxtL/vqxzgHRBVKpwApHAZDUqDb3He57T8sjh2sTcMlhn053f8dJim3o5PUf2</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>J4ZMxSGalRp6blK4yN3faYHQmNoWWNliWMhwssiN+8tRhBrqFyoouvpqeXMRZVhGdwZgRclZ7Q+ZKWiNBN78KQ==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/NihaiUstveri/NihaiUstveri.xml" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>rvfw4k4bwgbJSndDvN2f/RB732l3UigdZFJByEvaTEU9ePypKsLT/N6+2TzrlUBZ</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>ci8VRZjfKPR8sQOuXFHFi8+7imnHRnuofqeSrjtHnMP8YwfKZ7JZDjOpFZcNJc1V/DOEWzjcpPp1/JqzEFXttw==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Ekler/dosya1.pdf" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>D3ewrkZ5wc8sGbH6XwB1UEMZcqJI9Z9SC5tLQOOTK/OoxY4tjTFkZZSDT9r0EHok</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>lRDJNjf2uq+7kIKoAqpsPRFn9M9qAsQyEx3jpvmNOc08rF8m17Ry6PwqUJMKThyono2eg5yB7yARmGeKrD30Wg==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/Ekler/dosya3.docx" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>/F3O5tRJqX1cgbvTQHdL4bU5X6TuUGhf+C4jk8yb4KswsXLWTAjwmpBh2Pr2pFA8</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>SaVmE9F8MnrHa5T9hq7SMma652QOUNZ2Et0wSlt2PrujFB6OLOCEAMzvG5p+JQk30y7hZ8G54xZVO3XOsnSJKQ==</DigestValue>
+    </DigestItem>
+  </Reference>
+  <Reference URI="/package/services/metadata/core-properties/9b794a10a0ba4f5f8afc8738116c094c.psmdcp" Type="http://eyazisma.dpt/bilesen#dahili" xmlns="urn:dpt:eyazisma:schema:xsd:PaketOzeti-2">
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+      <DigestValue>HVUWdQiLp9VpXFeWTSCTl4iP6iR1aP/aCD2vdkYIfYIiLVkZFd+I5q+rtPo7mg7h</DigestValue>
+    </DigestItem>
+    <DigestItem>
+      <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+      <DigestValue>ePm5pTiwRrX0jHORRU4Cb5HCNInBSXH+TsQP0OtH8Me/hxHfVVYGjBYRPYER7h90NtJeeAldca1iAi08s1GruA==</DigestValue>
+    </DigestItem>
+  </Reference>
+</NihaiOzet>
